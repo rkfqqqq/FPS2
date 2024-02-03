@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.3.1 commit date:2022-10-04, commit time:18:35, hash:b292cfe5a936</authoring_tool>
+    </contributor>
+    <created>2022-11-23T02:38:24</created>
+    <modified>2022-11-23T02:38:24</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="PLAYER_Chrome1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Chrome1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Chrome1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Chrome1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Chrome1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Chrome1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_FaceSide1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_FaceSide1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_FaceSide1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_FaceSide1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_FaceSide1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_FaceSide1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Face1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Face1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Face1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Face1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Face1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Face1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_FaceTop1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_FaceTop1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_FaceTop1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_FaceTop1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_FaceTop1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_FaceTop1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Deltoid1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Deltoid1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Deltoid1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Deltoid1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Deltoid1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Deltoid1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Back1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Back1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Back1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Back1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Back1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Back1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Legs1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Legs1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Legs1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Legs1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Legs1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Legs1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_LegBck1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_LegBck1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_LegBck1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_LegBck1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_LegBck1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_LegBck1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_FootBtm1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_FootBtm1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_FootBtm1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_FootBtm1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_FootBtm1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_FootBtm1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Chest1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Chest1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Chest1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Chest1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Chest1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Chest1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Shoulders1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Shoulders1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Shoulders1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Shoulders1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Shoulders1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Shoulders1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Inmouth1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Inmouth1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Inmouth1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Inmouth1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Inmouth1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Inmouth1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Bicep1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Bicep1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Bicep1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Bicep1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Bicep1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Bicep1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_ForeArm1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_ForeArm1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_ForeArm1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_ForeArm1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_ForeArm1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_ForeArm1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Teeth1-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_LegBck1_001-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_LegBck1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_LegBck1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_LegBck1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_LegBck1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_LegBck1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Calf1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Calf1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Calf1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Calf1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Calf1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Calf1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Boots-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Boots_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Boots_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Boots_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Boots_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Boots_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_FootTop1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_FootTop1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_FootTop1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_FootTop1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_FootTop1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_FootTop1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Hand-Btm1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Hand-Btm1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Hand-Btm1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Hand-Btm1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Hand-Btm1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Hand-Btm1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Hand-Top1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Hand-Top1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Hand-Top1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Hand-Top1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Hand-Top1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Cuff1-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Cuff1_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Cuff1_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Cuff1_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Cuff1_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Cuff1_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="PLAYER_Shldr-Joint-effect">
+      <profile_COMMON>
+        <newparam sid="PLAYER_Shldr-Joint_bmp-surface">
+          <surface type="2D">
+            <init_from>PLAYER_Shldr-Joint_bmp</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="PLAYER_Shldr-Joint_bmp-sampler">
+          <sampler2D>
+            <source>PLAYER_Shldr-Joint_bmp-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="PLAYER_Shldr-Joint_bmp-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="PLAYER_Back1_bmp" name="PLAYER_Back1_bmp">
+      <init_from>PLAYER_Back1.png</init_from>
+    </image>
+    <image id="PLAYER_Bicep1_bmp" name="PLAYER_Bicep1_bmp">
+      <init_from>PLAYER_Bicep1.png</init_from>
+    </image>
+    <image id="PLAYER_Boots_bmp" name="PLAYER_Boots_bmp">
+      <init_from>PLAYER_Boots.png</init_from>
+    </image>
+    <image id="PLAYER_Calf1_bmp" name="PLAYER_Calf1_bmp">
+      <init_from>PLAYER_Calf1.png</init_from>
+    </image>
+    <image id="PLAYER_Chest1_bmp" name="PLAYER_Chest1_bmp">
+      <init_from>PLAYER_Chest1.png</init_from>
+    </image>
+    <image id="PLAYER_Chrome1_bmp" name="PLAYER_Chrome1_bmp">
+      <init_from>PLAYER_Chrome1.png</init_from>
+    </image>
+    <image id="PLAYER_Cuff1_bmp" name="PLAYER_Cuff1_bmp">
+      <init_from>PLAYER_Cuff1.png</init_from>
+    </image>
+    <image id="PLAYER_Deltoid1_bmp" name="PLAYER_Deltoid1_bmp">
+      <init_from>PLAYER_Deltoid1.png</init_from>
+    </image>
+    <image id="PLAYER_Face1_bmp" name="PLAYER_Face1_bmp">
+      <init_from>PLAYER_Face1.png</init_from>
+    </image>
+    <image id="PLAYER_FaceSide1_bmp" name="PLAYER_FaceSide1_bmp">
+      <init_from>PLAYER_FaceSide1.png</init_from>
+    </image>
+    <image id="PLAYER_FaceTop1_bmp" name="PLAYER_FaceTop1_bmp">
+      <init_from>PLAYER_FaceTop1.png</init_from>
+    </image>
+    <image id="PLAYER_FootBtm1_bmp" name="PLAYER_FootBtm1_bmp">
+      <init_from>PLAYER_FootBtm1.png</init_from>
+    </image>
+    <image id="PLAYER_FootTop1_bmp" name="PLAYER_FootTop1_bmp">
+      <init_from>PLAYER_FootTop1.png</init_from>
+    </image>
+    <image id="PLAYER_ForeArm1_bmp" name="PLAYER_ForeArm1_bmp">
+      <init_from>PLAYER_ForeArm1.png</init_from>
+    </image>
+    <image id="PLAYER_Hand-Btm1_bmp" name="PLAYER_Hand-Btm1_bmp">
+      <init_from>PLAYER_Hand-Btm1.png</init_from>
+    </image>
+    <image id="PLAYER_Hand-Top1_bmp" name="PLAYER_Hand-Top1_bmp">
+      <init_from>PLAYER_Hand-Top1.png</init_from>
+    </image>
+    <image id="PLAYER_Inmouth1_bmp" name="PLAYER_Inmouth1_bmp">
+      <init_from>PLAYER_Inmouth1.png</init_from>
+    </image>
+    <image id="PLAYER_LegBck1_bmp" name="PLAYER_LegBck1_bmp">
+      <init_from>PLAYER_LegBck1.png</init_from>
+    </image>
+    <image id="PLAYER_Legs1_bmp" name="PLAYER_Legs1_bmp">
+      <init_from>PLAYER_Legs1.png</init_from>
+    </image>
+    <image id="PLAYER_Shldr-Joint_bmp" name="PLAYER_Shldr-Joint_bmp">
+      <init_from>PLAYER_Shldr-Joint.png</init_from>
+    </image>
+    <image id="PLAYER_Shoulders1_bmp" name="PLAYER_Shoulders1_bmp">
+      <init_from>PLAYER_Shoulders1.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="PLAYER_Chrome1-material" name="PLAYER_Chrome1">
+      <instance_effect url="#PLAYER_Chrome1-effect"/>
+    </material>
+    <material id="PLAYER_FaceSide1-material" name="PLAYER_FaceSide1">
+      <instance_effect url="#PLAYER_FaceSide1-effect"/>
+    </material>
+    <material id="PLAYER_Face1-material" name="PLAYER_Face1">
+      <instance_effect url="#PLAYER_Face1-effect"/>
+    </material>
+    <material id="PLAYER_FaceTop1-material" name="PLAYER_FaceTop1">
+      <instance_effect url="#PLAYER_FaceTop1-effect"/>
+    </material>
+    <material id="PLAYER_Deltoid1-material" name="PLAYER_Deltoid1">
+      <instance_effect url="#PLAYER_Deltoid1-effect"/>
+    </material>
+    <material id="PLAYER_Back1-material" name="PLAYER_Back1">
+      <instance_effect url="#PLAYER_Back1-effect"/>
+    </material>
+    <material id="PLAYER_Legs1-material" name="PLAYER_Legs1">
+      <instance_effect url="#PLAYER_Legs1-effect"/>
+    </material>
+    <material id="PLAYER_LegBck1-material" name="PLAYER_LegBck1">
+      <instance_effect url="#PLAYER_LegBck1-effect"/>
+    </material>
+    <material id="PLAYER_FootBtm1-material" name="PLAYER_FootBtm1">
+      <instance_effect url="#PLAYER_FootBtm1-effect"/>
+    </material>
+    <material id="PLAYER_Chest1-material" name="PLAYER_Chest1">
+      <instance_effect url="#PLAYER_Chest1-effect"/>
+    </material>
+    <material id="PLAYER_Shoulders1-material" name="PLAYER_Shoulders1">
+      <instance_effect url="#PLAYER_Shoulders1-effect"/>
+    </material>
+    <material id="PLAYER_Inmouth1-material" name="PLAYER_Inmouth1">
+      <instance_effect url="#PLAYER_Inmouth1-effect"/>
+    </material>
+    <material id="PLAYER_Bicep1-material" name="PLAYER_Bicep1">
+      <instance_effect url="#PLAYER_Bicep1-effect"/>
+    </material>
+    <material id="PLAYER_ForeArm1-material" name="PLAYER_ForeArm1">
+      <instance_effect url="#PLAYER_ForeArm1-effect"/>
+    </material>
+    <material id="PLAYER_Teeth1-material" name="PLAYER_Teeth1">
+      <instance_effect url="#PLAYER_Teeth1-effect"/>
+    </material>
+    <material id="PLAYER_LegBck1_001-material" name="PLAYER_LegBck1.001">
+      <instance_effect url="#PLAYER_LegBck1_001-effect"/>
+    </material>
+    <material id="PLAYER_Calf1-material" name="PLAYER_Calf1">
+      <instance_effect url="#PLAYER_Calf1-effect"/>
+    </material>
+    <material id="PLAYER_Boots-material" name="PLAYER_Boots">
+      <instance_effect url="#PLAYER_Boots-effect"/>
+    </material>
+    <material id="PLAYER_FootTop1-material" name="PLAYER_FootTop1">
+      <instance_effect url="#PLAYER_FootTop1-effect"/>
+    </material>
+    <material id="PLAYER_Hand-Btm1-material" name="PLAYER_Hand-Btm1">
+      <instance_effect url="#PLAYER_Hand-Btm1-effect"/>
+    </material>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+    <material id="PLAYER_Cuff1-material" name="PLAYER_Cuff1">
+      <instance_effect url="#PLAYER_Cuff1-effect"/>
+    </material>
+    <material id="PLAYER_Shldr-Joint-material" name="PLAYER_Shldr-Joint">
+      <instance_effect url="#PLAYER_Shldr-Joint-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="gordon_reference-mesh" name="gordon_reference">
+      <mesh>
+        <source id="gordon_reference-mesh-positions">
+          <float_array id="gordon_reference-mesh-positions-array" count="1128">-5.639967 2.450407 62.38138 -7.464267 2.907613 59.60721 -6.009139 -0.714749 62.14928 -8.332832 -0.809936 62.79858 -10.31707 -0.754944 61.85971 -5.977995 -4.167116 60.21713 -8.790658 -4.177785 60.35208 -6.429982 -6.025439 55.0283 -8.037429 -4.597206 55.04185 -7.11998 -1.371661 51.92074 5.590033 2.419095 62.36347 5.787552 -0.745746 62.05969 6.280031 4.113864 58.43799 7.431127 2.871784 59.59217 8.138262 -0.85263 62.54066 10.2895 -0.799337 61.72138 5.990024 -4.206754 60.17273 8.573186 -4.203873 60.3329 6.420018 -6.057359 55.0115 7.890538 -4.633555 55.01927 -3.112839 -7.325815 2.481272 -0.912844 -4.916324 0.19519 -1.472841 -4.81423 2.182137 -0.922843 0.722799 2.737135 -0.972847 2.463675 0.197736 -2.976872 3.6511 4.413716 -3.362848 3.713678 0.18817 -5.302847 2.473673 0.197745 -10.12466 0.851341 47.35795 -12.48823 -0.139636 46.63879 -11.88569 -0.07885998 47.93633 -12.0948 -2.618695 47.45393 -12.66272 -2.741172 46.201 -10.11864 -3.348714 47.5167 -10.37249 -3.879429 45.58748 -8.194 -1.756769 44.76291 7.07002 -1.413528 51.90496 5.440014 -6.448374 51.15124 7.60002 -1.182692 52.67523 8.057667 2.540952 54.69092 3.910024 3.294122 51.15446 -5.609991 -1.124224 45.50187 -2.559998 -5.931251 44.40741 -3.529994 -6.017276 46.90153 -2.369994 -7.473335 47.5857 2.390002 -5.967962 44.38862 2.350006 -7.51142 47.56224 3.340006 -6.05662 47.11889 -0.08996498 2.071032 65.17397 -0.189965 3.938759 63.18118 4.710031 -0.796011 63.85749 0.651261 2.463677 0.217735 2.648908 3.659351 4.439212 3.04126 3.713683 0.208163 4.861261 2.523685 0.20775 5.071267 0.682798 2.777113 5.431269 -4.896307 0.185185 4.661272 -4.854235 2.232112 9.04043 2.662824 60.04679 -6.76 -0.280856 41.95602 -3.609985 2.05398 46.6702 -4.76001 3.908935 42.57747 4.36999 3.918961 42.56747 3.590015 2.030823 46.59296 6.450001 -0.280802 41.89602 -4.709969 -0.758528 63.96518 -4.199974 -3.719277 61.72296 10.31642 0.959873 47.40288 8.396311 -1.656862 44.81027 8.558666 -1.240187 47.56235 10.39419 1.11772 46.59831 12.69837 -0.03785794 46.68475 12.0933 0.01967597 47.98883 -3.553187 -2.995371 16.89615 -0.434455 0.03720295 14.16701 -1.101135 -0.178318 18.05484 -3.534165 3.631393 16.98126 -3.389374 4.498286 12.50867 -6.244265 -0.01490497 14.1132 -3.192842 -7.725042 0.241135 -5.762844 -4.896316 0.165203 -4.942841 -4.854273 2.302128 -5.352843 0.682759 2.847127 -10.18632 1.009994 46.54319 -8.349461 -1.348713 47.52079 3.096064 3.629197 17.00212 0.102273 0.02884697 14.18297 0.583141 -0.173924 18.07118 3.061744 4.491884 12.52543 5.92274 -0.01621794 14.1289 5.234522 -0.217948 18.06746 2.791275 -7.325811 2.50126 2.861272 -7.725036 0.261122 0.581269 -4.916323 0.2151859 1.151272 -4.814229 2.202131 -9.255939 2.698207 60.0555 -8.306565 2.577282 54.71323 -3.919976 3.326036 51.17126 12.29776 -2.520154 47.49724 10.31895 -3.240182 47.56266 12.86673 -2.639393 46.24741 10.5796 -3.783487 45.6354 0.591267 0.7228 2.757134 4.150026 -3.750587 61.70506 3.610016 -8.015388 55.32552 -6.329969 4.145178 58.4559 -7.60998 -1.183968 52.85635 -5.751724 -0.210215 18.05298 -0.458115 -8.241577 68.00568 -0.608115 -8.131183 66.86572 -2.528115 -8.011559 67.95576 -2.498115 -7.921211 66.9458 0.05188494 -8.261576 68.00568 2.261885 -8.051558 67.95574 0.201885 -8.151173 66.83571 2.191885 -7.97121 66.94577 2.630021 -6.604337 59.41539 5.430009 -1.151905 45.44411 -5.469986 -6.416457 51.16804 -3.649984 -7.983474 55.34232 -2.679979 -6.573716 59.42331 3.106626 -2.995758 16.91749 -0.448115 -8.331577 68.00565 0.06188499 -8.351576 68.00565 0.241885 -8.201494 67.7657 -0.658115 -8.151494 67.76571 -0.698115 -8.171411 67.52571 0.251885 -8.171418 67.54571 0.241885 -8.201494 67.7657 -0.698115 -8.171411 67.52571 -0.658115 -8.151494 67.76571 -2.969965 -4.445121 67.75836 -2.949965 -4.472368 67.56328 -2.478115 -7.961435 67.59578 -2.528115 -8.011559 67.95576 -2.949965 -4.472368 67.56328 -2.969965 -4.445121 67.75836 2.610035 -4.541077 67.58518 2.630036 -4.516589 67.78987 2.211885 -8.01141 67.52576 2.261885 -8.051558 67.95574 2.630036 -4.516589 67.78987 2.610035 -4.541077 67.58518 -0.169965 -1.013594 65.15385 -2.719972 -1.722242 61.46539 -2.489966 -2.803109 64.90042 -1.627822 -4.766198 63.57728 -0.189976 -4.406963 60.17648 1.362178 -4.746193 63.56729 2.420028 -1.724304 61.43545 2.100034 -2.798932 64.84959 -0.169961 -0.78117 68.47687 -3.009962 -1.822365 68.47979 -2.939964 -4.630929 68.07958 -2.86996 -3.993713 71.76844 0.09003597 -1.226488 66.33078 -0.229183 0.085895 66.66563 -0.209964 -1.294024 66.52988 -0.469964 -1.245712 66.32527 -0.649183 -0.243798 65.77552 0.260817 -0.233801 65.78553 -0.199183 0.936512 64.87593 2.450033 -4.784962 65.86102 2.630036 -4.63227 68.04798 2.620038 -1.819527 68.39737 2.83004 -3.993633 71.69564 1.870041 -1.759952 71.52515 -0.179958 -1.054174 71.74848 -2.329959 -1.770982 71.5636 -2.759967 -4.771251 65.88577 -0.199968 1.709648 62.83324 1.362178 -4.746193 63.56729 -0.189976 -4.406963 60.17648 -1.627822 -4.766198 63.57728 1.942178 -5.876483 64.40691 1.870033 -6.929964 66.55634 1.910034 -6.626565 67.89183 2.270035 -6.461579 68.94832 0.264474 -8.074441 67.99975 -0.159965 -7.988566 69.73777 -0.635526 -8.07446 68.04975 -2.709965 -6.490412 68.94006 -2.309966 -6.659578 67.93438 -2.249967 -6.925866 66.57832 -2.297822 -5.886501 64.4569 -1.007822 -6.33597 62.91674 0.802178 -6.40598 62.94672 1.452179 -6.516221 63.64668 0.971102 -7.117951 64.83014 0.782179 -7.396262 63.76638 0.522179 -7.546648 64.88633 -0.757821 -7.546652 64.89633 0.432179 -6.865945 62.84656 -0.697821 -6.865949 62.85656 -1.707822 -6.526228 63.66668 -1.278898 -7.107948 64.82015 -0.960041 -7.535077 66.1963 -0.299967 -8.019228 67.74188 0.05003297 -8.000004 67.74739 -0.459969 -8.608146 66.24122 0.190031 -8.608146 66.24122 0.709959 -7.545077 66.1963 -0.109969 -8.427855 65.93923 -0.129969 -7.852216 65.85473 -0.80997 -7.54479 64.89219 2.590037 -6.402081 70.95249 -0.199964 -7.686252 70.82326 1.580038 -6.77679 71.89572 2.440039 -5.977316 71.86505 -2.679963 -6.403415 70.92089 -2.509961 -5.991021 71.84031 -1.859962 -6.765839 71.93008 0.55003 -7.551645 64.87982 -0.13997 -7.590093 64.86878 -0.987821 -7.396259 63.75638 -0.149963 -7.537647 71.79183 -0.139962 -7.671383 72.22161 -0.06996095 -5.700238 72.20465 -0.10996 -3.632889 72.14248 11.31525 0.625851 59.0801 10.00165 -0.854838 61.0688 11.31309 -2.344156 59.09896 9.319932 -2.904579 60.30964 9.384056 -0.844789 60.92091 7.16526 -0.854559 60.23611 9.325347 1.195438 60.26135 6.841463 -0.862946 55.55333 8.928048 1.896375 57.54243 8.928738 1.927234 55.04778 11.62694 0.797376 54.65787 11.60706 -2.432623 54.65458 8.696648 -3.832927 55.51337 -8.486124 -3.941449 55.47327 -11.00039 -2.442687 59.06273 -11.26552 -2.531192 54.71746 -11.28642 0.69881 54.71061 -11.00239 0.527319 59.04384 -8.724101 1.828711 55.00667 -8.726262 1.787857 57.48928 -6.537816 -0.971476 55.56021 -9.116408 1.09692 60.21159 -6.470691 -0.962982 59.93537 -9.180863 -0.943307 60.87062 -9.12136 -3.003097 60.26093 -9.82858 -0.963361 61.02605 8.934748 -3.733636 57.57139 -8.732212 -3.832156 57.52814 6.739825 -1.264391 36.79233 4.299549 3.589353 34.79235 -0.180011 4.440686 37.53765 -4.690728 3.592309 34.71047 -7.066565 -1.239675 37.00669 -0.129968 5.277312 58.44823 -0.170006 2.431622 34.82696 -3.920598 -4.996442 26.91737 -0.16999 -4.028471 35.09473 -4.021361 -4.96833 36.78929 -0.311977 -2.936455 26.09999 -0.617241 -1.078762 21.45788 -3.753674 -4.112827 22.8972 -6.398037 -1.113363 21.45839 -6.872667 -1.443306 28.14106 3.592464 -4.997499 26.93772 3.551323 -4.96502 36.49348 6.422157 -1.438528 28.06938 5.562221 -1.115378 21.5213 3.249936 -4.111782 22.91568 0.06920599 -1.075112 21.4737 0.02340495 -2.938582 26.04683 -3.919987 -5.289429 37.84429 -3.269986 -5.570181 40.0242 2.830014 -5.580162 40.01419 3.520013 -5.2894 37.81429 -3.676023 -4.33157 20.75729 3.14172 -4.331641 20.70303 -2.373332 3.05691 25.13937 -5.178698 3.140364 25.98905 -3.749192 2.64307 22.64436 2.036539 3.059804 25.15714 3.240937 2.644417 22.66309 4.859962 3.132145 26.01244 -0.079979 -6.573033 59.43328 -2.759977 -4.841617 59.39445 2.520023 -4.850913 59.4051 -0.1499789 -5.826729 58.77054 -0.07996898 -6.296056 64.78237 0.480031 -6.336093 64.95815 -0.669969 -6.316784 64.89086 12.1601 0.888203 52.2616 12.18542 -2.59178 52.21287 9.700741 -3.731596 51.65961 7.522721 -0.871746 52.07672 9.182736 -3.342566 54.47013 -8.973046 -3.45109 54.42682 -7.363871 -0.980265 52.03507 -9.547121 -3.830121 51.60993 -11.89323 -2.700316 52.16733 -11.86835 0.789667 52.21628 9.596943 1.738203 52.24367 -9.437478 1.639675 52.20383 -11.13117 -1.649637 36.92497 -10.4316 0.57449 43.89807 -12.50944 -2.098911 37.01106 -12.46996 -5.172452 37.70394 -11.13713 -5.326897 37.7657 12.67743 -5.068683 37.75114 12.71301 -1.99514 37.05755 11.33447 -1.543885 36.96918 10.63355 0.670434 43.9444 11.33311 -5.221145 37.80993 9.909467 -2.903779 37.30599 -9.71013 -3.011513 37.26444 -1.139969 -6.587259 64.78203 -0.50997 -7.318028 64.7908 -1.089969 -6.625959 64.98941 -0.489969 -7.31828 65.00921 0.30003 -7.330399 64.79766 0.280031 -7.318281 65.00921 0.840031 -6.625961 64.98941 -1.107821 -6.566632 64.83667 -0.517821 -7.366625 64.81639 -1.147821 -6.416701 65.03672 -0.547821 -7.426728 65.11637 0.302179 -7.366621 64.80639 0.412179 -7.416728 65.11637 0.902178 -6.4167 65.03672 0.880031 -6.58726 64.78203 0.862179 -6.566631 64.83666 -3.15284 -0.977833 4.566552 2.591271 -0.97783 4.586544 11.87775 -1.936471 38.62736 11.02067 -2.268391 36.35318 10.67088 -3.222044 38.901 10.72338 -4.349267 36.94052 11.54967 -2.950522 33.48831 11.40054 -5.471071 34.11648 11.0906 -6.049084 32.36038 11.74524 -6.180138 32.17259 10.78446 -5.953848 30.90192 11.15007 -6.139248 30.71413 10.9161 -4.138578 30.8677 11.42993 -4.096684 30.6131 12.5487 -2.889711 33.45943 -12.34532 -2.993274 33.4107 -10.71121 -4.23519 30.82094 -11.23256 -4.20184 30.57037 -10.94642 -6.246419 30.6643 -10.58306 -6.060192 30.85894 -11.53403 -6.283954 32.13014 -10.88513 -6.060781 32.32306 -11.19298 -5.574632 34.07674 -11.3468 -3.044338 33.44606 -10.51994 -4.448658 36.8977 -10.81236 -2.377477 36.3105 -10.46474 -3.317992 38.85853 -11.67795 -2.040239 38.58709 -11.71863 -4.002264 39.08248 -12.04112 -4.707204 37.05951 -11.03955 -6.340095 36.10892 -10.27006 -5.994263 35.95429 -10.2583 -7.363275 34.5508 -9.978167 -7.150638 34.45379 -10.2984 -7.129506 34.36602 -11.11379 -6.09371 34.97407 12.24451 -4.600469 37.10327 11.23825 -6.234108 36.15113 10.46928 -5.893239 36.00316 10.47106 -7.257272 34.59841 10.17903 -7.049302 34.49809 10.51406 -7.030316 34.40647 11.31014 -5.999435 35.0219 12.4385 -5.931283 34.19162 -12.23155 -6.034845 34.14282 11.92276 -3.906314 39.13587 12.22866 -2.278 36.52943 -12.02183 -2.387379 36.47629</float_array>
+          <technique_common>
+            <accessor source="#gordon_reference-mesh-positions-array" count="376" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gordon_reference-mesh-normals">
+          <float_array id="gordon_reference-mesh-normals-array" count="1782">-0.8308982 0.05436617 0.5537623 -0.2295957 0.7746148 0.589286 -0.1770809 0.09009808 0.9800636 -0.0626747 0.03331667 0.9974778 -0.127514 -0.006291329 0.9918169 -0.1270102 -0.7237058 0.6783202 -0.2421959 -0.8359241 0.4925161 -0.6268261 -0.7762469 -0.0673061 -0.6104025 -0.6879962 -0.3925179 -0.7593817 -0.4342946 -0.484487 0.9805806 0.04299086 0.191347 0.1838845 0.2750749 0.9436739 0.7908978 0.5262003 0.3124004 0.1753834 0.8416129 0.5108117 0.06972187 0.02748334 0.9971878 0.08530014 -0.005796372 0.9963384 0.1265937 -0.7075927 0.6951882 0.2530775 -0.8232067 0.5082151 0.6409938 -0.7648816 -0.06389904 0.7267171 -0.5360194 -0.4296108 0.03340339 -0.9459474 0.3225954 0.9310418 -0.3277153 0.1605119 0.9060372 -0.3212609 0.2754781 0.9754775 0.111818 0.18958 0.8634563 0.4966533 0.08819818 -0.02827852 0.97315 0.2284286 -0.04361426 0.9989004 0.01720237 -0.8516199 0.5038791 0.1443938 0.2443037 0.9629775 0.1139735 -0.736819 0.6256229 0.2563077 -0.7824015 0.5235235 0.3372998 -0.8358802 -0.3577866 0.4162849 -0.6213053 -0.6930951 0.365512 0.2265833 -0.9452793 0.234749 0.2103638 -0.9487613 0.235795 0.991613 0.1283336 0.01530832 0.8060571 -0.1113213 -0.5812741 0.939339 -0.2706435 -0.2107001 0.8275775 -0.02040487 -0.5609807 0.5267008 0.7456824 -0.4080982 0.6337933 0.6643953 -0.396087 -0.9397114 -0.3348104 0.06960326 -0.4482222 -0.8671563 -0.2171105 -0.761896 -0.5657194 -0.3153985 -0.2470939 -0.8770326 -0.4120177 0.460094 -0.8394824 -0.2891067 0.4092093 -0.8223152 -0.3954057 0.7955185 -0.5293753 -0.2948089 -0.5398203 0.3742296 0.7540201 -0.002602756 0.5480898 0.8364156 -0.004248619 0.7284122 0.685126 0.5633119 0.3653232 0.7410929 0.6951794 -0.1400113 0.7050691 0.8531392 -0.1092751 0.5101104 0.5365983 -0.5795882 0.6133024 -0.8634439 0.4966758 0.08819264 0.01949411 0.9731843 0.2291997 0.04932385 0.9986259 0.0177024 0.8515555 0.510649 0.1187054 0.9618913 0.1664854 0.2169052 0.9202954 -0.3320984 0.206802 0.8785859 -0.3372117 0.338194 -0.03809607 0.8441199 0.5347994 -0.9406123 0.06078308 0.3339969 -0.4881114 0.7393575 0.4637864 -0.4949777 0.7304283 0.4706076 0.3307762 0.8302763 0.4485849 0.6572192 0.6262383 0.4193907 0.9548358 0.06190448 0.2906141 -0.6646045 -0.1499273 0.7319992 -0.5055939 -0.6033756 0.616695 -0.4514864 -0.7065792 0.5448909 -0.8077086 -0.1329004 0.5744078 -0.2442967 0.9629803 0.1139659 -0.9916136 0.1283293 0.01530152 -0.9978529 -0.01927715 0.06259483 -0.2241817 0.9744811 -0.01136726 0.7368049 0.6256409 0.2563047 0.782413 0.5235 0.3373097 -0.0212289 -0.9992594 -0.03209656 0.990773 -0.1261796 0.04947525 0.9835416 -0.07108849 0.1661095 -0.02827215 0.9731501 0.2284285 0.006207883 0.9998513 0.01609307 -0.9912782 -0.1317796 0.00137335 0.02882504 -0.9841998 0.1747002 -0.916229 -0.3339051 0.2214314 -0.8776089 -0.3355035 0.3424032 -0.9577006 0.155382 0.2422109 0.2241943 0.9744778 -0.01139658 0.997852 -0.01930499 0.06260043 0.01950407 0.9731857 0.2291927 -0.9930194 -0.1142204 0.02943056 -0.9903814 -0.06992876 0.1193937 -0.01219177 0.9997759 0.01731139 0.98942 -0.1431121 0.02381145 0.9832729 -0.07154589 0.1674982 -0.0336039 -0.9465652 0.3207573 -0.02882301 -0.9841998 0.1746997 -0.931044 -0.3277133 0.1605027 -0.9060324 -0.3212416 0.2755162 0.02879828 0.8551983 0.5175005 -0.1621726 0.9859551 -0.03990978 -0.1954405 0.9801287 -0.03392463 0.8358846 -0.3577822 0.41628 -0.2265093 -0.9454544 0.2341142 0.6213161 -0.6930875 0.3655081 -0.210406 -0.9487537 0.2357874 -0.9754765 0.111817 0.1895849 0.4504032 -0.7044027 0.5485926 0.2295889 -0.8826755 0.4100887 -0.3008174 0.8799389 0.3677179 -0.4563858 0.8844979 0.0968275 -0.7108129 0.7013965 0.05280131 -0.4677361 0.776942 -0.4214074 -0.9557055 -0.08520197 -0.2817226 -0.9175297 -0.04757785 -0.3948109 -0.8886847 -0.04707562 -0.456096 -0.9637485 -0.02430427 -0.2657032 -0.9900969 -0.07050055 0.1213997 0.1129791 0.9901056 0.08322608 0.1130107 0.9901081 0.08315354 0.1129141 0.99012 0.08314287 0.1128965 0.9901219 0.08314496 -0.09740549 0.9917944 0.08280098 -0.0974577 0.9917913 0.08277744 -0.09742164 0.9917929 0.08280026 -0.09742891 0.9917945 0.08277338 -0.6273372 0.3127419 -0.7131904 -0.4677338 0.7769307 -0.4214307 -0.6273372 0.312742 -0.7131904 0.5830937 -0.7852726 -0.208204 0.5660885 -0.8221746 -0.0597735 0.261778 -0.9615175 -0.08340501 0.3455086 -0.8582094 0.3796055 0.5654889 -0.7602673 0.3197123 0.9398084 -0.3386861 0.04529881 -0.9394203 -0.2746865 -0.2050291 -0.3544949 -0.9308115 -0.08901411 -0.5702118 -0.8194523 -0.05793666 -0.5643222 -0.8044189 -0.1856084 -0.2348198 -0.8816539 0.409324 -0.3511791 -0.8563574 0.3785833 -0.5691905 -0.7575441 0.319608 0.006147146 -0.9994944 -0.03119528 -0.1527343 -0.9841545 -0.09006774 -0.1527344 -0.9841545 -0.09006792 -0.1527345 -0.9841544 -0.09006804 -0.1183365 -0.980827 -0.1548383 -0.1183364 -0.9808271 -0.1548382 -0.1183364 -0.980827 -0.1548382 -0.02840775 -0.003512322 0.9995903 -0.02840775 -0.003512501 0.9995903 -0.02840775 -0.003512501 0.9995903 0.9860054 0.1222919 -0.1133046 0.9860056 0.1222918 -0.1133044 0.9860056 0.1222914 -0.1133037 0.1363219 -0.9870066 -0.0850563 0.1363223 -0.9870064 -0.08505678 0.1363222 -0.9870065 -0.0850566 0.1003035 -0.982756 -0.1553377 0.1003035 -0.9827561 -0.1553377 0.1003035 -0.9827561 -0.1553375 0.02314311 0.002943873 0.9997279 0.02314317 0.002943813 0.9997279 0.02314305 0.002943933 0.9997279 -0.9826613 -0.1219075 -0.1396982 -0.9826613 -0.1219077 -0.1396975 -0.9826613 -0.1219075 -0.1396983 -0.05920439 -0.9899405 0.1285018 -0.05920028 -0.9899407 0.1285023 -0.05920308 -0.9899405 0.1285018 0.001997709 -0.9927777 -0.119953 0.002142012 -0.9927782 -0.1199459 0.001998186 -0.9927776 -0.1199531 0.05920481 0.9899405 -0.1285017 0.05919986 0.9899407 -0.1285024 0.05920326 0.9899405 -0.1285019 -0.001996934 0.9927777 0.1199532 -0.002142012 0.9927782 0.1199459 -0.001997828 0.9927777 0.1199531 -0.9896733 -0.1253007 -0.06961685 -0.9896736 -0.1252983 -0.06961733 -0.9896735 -0.1252997 -0.06961709 -0.9760433 -0.1349064 -0.1707039 -0.9826652 -0.1218886 -0.139687 -0.9826652 -0.1218881 -0.1396874 0.9896734 0.1253002 0.06961709 0.9896736 0.1252987 0.06961715 0.9896735 0.1252995 0.06961703 0.9760433 0.1349063 0.1707038 0.9760433 0.1349066 0.1707038 0.9760433 0.1349061 0.1707039 0.9919429 -0.1058024 -0.06967955 0.991943 -0.1058016 -0.06967973 0.991943 -0.1058017 -0.06967973 0.9845879 -0.1118994 -0.1344071 0.9845878 -0.1119003 -0.1344069 0.9845879 -0.1118994 -0.1344071 -0.9919428 0.1058031 0.06967961 -0.991943 0.1058025 0.06967955 -0.9919429 0.105802 0.06967967 -0.9845879 0.1119006 0.1344069 -0.9845879 0.1118997 0.1344071 -0.984588 0.1118993 0.1344071 8.94505e-4 0.9409658 0.3385006 -0.9920474 0.07562166 0.1006143 -0.9246131 0.355022 -0.1380224 -0.825519 -0.09050679 -0.5570701 -0.01190131 -0.8100978 -0.5861742 0.7544916 -0.01837229 -0.6560525 0.9904822 0.08462685 0.1085515 0.7544658 -0.01841491 -0.6560809 0.9904771 0.08462804 0.1085976 0.9192841 0.3720713 -0.1283739 0.00200051 0.9983083 -0.0581085 -0.8691978 0.4932234 -0.03501266 -0.9903839 -0.1218048 -0.0655995 -0.7796013 0.02341306 0.6258382 0.8162029 -0.5203067 -0.2511847 -0.05670511 0.3278339 0.9430321 -0.06342089 -0.09659719 0.9933009 -0.9340764 -0.310001 0.1772024 -0.6144499 -0.3753181 -0.6939651 0.852899 -0.2299172 -0.4687232 -0.05759936 0.7834996 -0.618717 0.9708602 -0.07219421 -0.2285139 0.9851847 -0.1419768 -0.09619712 0.8419386 0.5368438 -0.05420535 0.7914104 0.07220363 0.607006 0.4811727 0.653786 0.5839836 0.01219975 0.718912 0.6949941 -0.4952297 0.6272107 0.6011275 -0.9702898 -0.06670278 -0.2325694 -0.006287813 0.6480859 0.7615414 0.7545092 -0.01834517 -0.6560332 -0.01192766 -0.8100916 -0.586182 -0.8254849 -0.09053295 -0.5571161 0.7544618 -0.01838999 -0.6560863 0.8957144 -0.229704 -0.3806994 0.8003135 -0.5956101 -0.06889927 0.7267287 -0.6754934 -0.1247962 0.7672231 -0.6358017 -0.08440858 0.3782069 -0.9129253 -0.1533849 -0.003499627 -0.9892925 0.1459045 -0.2942968 -0.9429132 -0.1558981 -0.787196 -0.6151888 -0.04319101 -0.7186348 -0.6751118 -0.1666977 -0.8003038 -0.5939053 -0.08240371 -0.8834685 -0.2380104 -0.4035276 -0.8254974 -0.09050267 -0.5571026 -0.3998827 0.121615 -0.9084622 0.4171782 0.08598625 -0.9047479 0.801871 -0.4367993 -0.4076879 0.708421 -0.7016213 -0.07659918 0.340294 -0.8979791 -0.2789869 0.373887 -0.9267318 -0.03710711 -0.2270043 -0.9706925 -0.07889962 0.3767163 -0.4748236 -0.7953788 -0.2576975 -0.4553903 -0.8521806 -0.7824981 -0.4454947 -0.4350073 -0.6748862 -0.7311998 -0.09937655 -0.6255834 -0.7460994 -0.2279937 -0.4376987 -0.8985452 -0.03219902 0.3434905 -0.9390845 0.01160722 -0.3767638 -0.9220926 -0.08828669 0.4840324 -0.8467133 -0.2208832 0.6441217 -0.7331073 -0.2183139 0.001997768 -0.4066873 -0.9135653 -0.007419288 -0.8618015 -0.5071916 -0.392599 -0.9116221 -0.1217015 0.7799729 -0.6142008 0.1199989 -0.003484547 -0.9892971 0.1458735 0.4573273 -0.7398143 0.4934842 0.5547248 -0.2634975 0.7892081 -0.8096289 -0.5639364 0.1627174 -0.5885544 -0.2173821 0.778684 -0.4994896 -0.7047144 0.5038728 0.4008992 -0.9072477 -0.1272069 -0.003990232 -0.9668512 -0.2553095 -0.4530648 -0.8520752 -0.2621076 -0.002617299 -0.9973977 -0.07204985 0.006405115 -0.7716531 0.6360115 8.74427e-4 0.002059578 0.9999975 0.009102225 0.1070695 0.9942099 0.7118205 0.6291061 0.3123095 0.3572047 0.01000177 0.9339727 0.8022022 -0.527688 0.2793155 -0.2532682 -0.679502 0.6885728 -0.2685255 0.0121932 0.9631955 -0.7082892 0.008499383 0.7058714 -0.251996 0.6986351 0.6696321 -0.9879855 0.02109569 0.1531001 -0.2727127 0.9506275 0.1481055 0.02222418 0.9991293 0.03530973 0.9315823 0.3553708 0.07659041 0.8462738 -0.5286947 0.0655952 0.04852205 -0.9964981 0.06809848 -0.06927746 -0.9953786 0.06649965 -0.8123098 -0.5204077 0.2633035 -0.8508316 -0.5215994 0.0634008 -0.9332826 0.3514145 0.07410526 -0.7254981 0.621598 0.2954124 -0.04118275 0.9985243 0.03540313 0.2514722 0.9565437 0.1476007 0.9902574 0.02139335 0.1375961 0.2283849 0.7215707 0.6535872 0.7153941 0.008786737 0.698666 0.2776842 0.01223844 0.9605945 0.2296812 -0.7030024 0.6730782 -0.384278 0.009896278 0.9231644 -0.2790032 -0.9389105 0.2015056 0.2564848 -0.9456328 0.1999856 0.9509629 -0.3092143 -0.007508099 0.5373157 0.8166106 -0.2108058 0.9928541 -0.08988082 0.07849919 0.3985112 0.9170671 0.01329785 0.001699745 0.9696462 -0.244507 -0.4027963 0.9151826 0.01400357 -0.5411126 0.8145368 -0.2091103 -0.9928454 -0.08980458 0.07869744 -0.9536522 -0.3007996 0.008203625 -9.97046e-4 0.9934015 0.1146847 -0.004977762 0.9623677 0.2717051 0.222418 0.913255 0.3413144 0.09020119 0.9724638 -0.2148905 0.1771928 0.9755526 0.1299993 -0.9389093 0.2552164 -0.230898 -0.4526542 0.8526248 -0.2610271 -0.4392184 0.8560882 -0.2723971 0.3018264 0.9125375 -0.2760006 0.609786 0.753389 -0.2461019 0.9463093 0.0943039 -0.3092013 0.9604818 0.1436752 -0.238395 0.004125833 0.8032842 -0.5955818 -0.9522621 -0.04468774 -0.3019935 -0.201591 -0.9690924 -0.1422015 -0.002994418 -0.9799812 -0.1990679 -0.3176252 -0.9482164 -1.0333e-4 0.9262681 -0.3546825 -0.1273885 0.9103674 -0.3541067 -0.2141019 -0.02880346 -0.9974436 -0.06539648 -0.9529418 -0.2549029 -0.1640927 -0.9989678 -0.03328877 -0.03090506 -0.9536496 -0.3008069 0.008221864 0.2076001 -0.9667659 -0.1492182 0.3010017 -0.9536105 0.00499773 0.9509757 -0.3091756 -0.007481038 0.9975671 -0.03649407 -0.05939877 0.9485273 -0.2418987 -0.2044044 0.05310189 -0.9961689 -0.0694825 -0.9183622 -0.3548021 -0.1752902 -0.9272964 -0.3585235 -0.1076217 -0.3712924 -0.9199689 -0.1256952 -0.451925 -0.8918225 0.02040475 0.2902767 -0.9564072 -0.03201317 0.4186999 -0.9005281 -0.1172165 -0.018799 -0.9456635 -0.3246032 -0.3842094 -0.892202 -0.2374002 -0.6110984 -0.7899993 0.04959988 0.4657967 -0.884809 -0.01210618 0.3448078 -0.912481 -0.2201957 -0.02389371 -0.920803 -0.3892955 -0.9536877 -0.2147718 -0.2106017 -0.9705767 0.2222751 -0.09259933 -0.02483111 -0.9439728 -0.3290878 0.9544556 -0.2457274 -0.1692119 0.9669446 0.2531439 -0.03059917 0.0467059 -0.9290853 -0.3669046 -0.9522626 -0.2439774 -0.1834968 -0.9655222 0.2572751 -0.03970611 0.05501043 -0.9410539 -0.3337536 0.9636249 -0.225089 -0.1440899 0.9819859 0.1848838 -0.03900921 -0.03290766 -0.9943317 0.1011021 0.06356525 -0.9933593 0.0958991 0.6504061 0.747403 -0.1355017 -0.4965422 0.8679153 -0.01299029 -9.00656e-4 0.9755245 -0.2198889 -0.6114227 0.7778487 -0.1453055 -0.04210209 0.9147155 -0.4018993 -0.6530658 0.7474598 -0.1216928 0.4991756 0.8663725 -0.01491552 0.04149764 0.9117775 -0.4085828 0.6266859 0.7606821 -0.169197 0.945545 -0.3248883 -0.01981014 -0.9455417 -0.3251934 -0.01415163 0.00630778 -0.02431207 -0.9996845 0.004367589 -0.007267236 -0.9999641 0.004266023 -0.006927788 -0.9999669 0.004519283 -0.007052958 -0.999965 0.004526674 -0.007049441 -0.999965 0.004576861 -0.006988465 -0.9999652 -0.00640273 -0.01220786 -0.999905 -0.00640738 -0.01223701 -0.9999047 -0.006403744 -0.01221305 -0.9999049 -0.006401121 -0.01221764 -0.9999049 -0.006304621 -0.02426362 -0.9996857 -0.006401836 -0.01220476 -0.9999051 -0.2939085 -0.941588 -0.1644083 0.4063136 -0.8868544 -0.2199974 0.6869165 -0.594214 -0.4183964 -0.004200994 -0.9450576 0.3268769 -0.8854935 -0.3314781 -0.3256126 -0.8787934 -0.2220511 -0.4223929 0.7596177 -0.4746095 -0.444665 0.8583957 -0.3740071 -0.3511062 -0.6440073 -0.6757912 -0.3585539 0.005297183 0.3450771 0.9385595 0.5643207 0.0824933 0.8214238 0.4932857 0.04000169 0.8689472 0.7449884 -0.2610078 0.6138952 0.6050746 -0.4756624 0.6384593 0.5752342 -0.6553331 0.4895348 0.02119463 -0.8852466 0.4646388 0.01437962 -0.9886576 0.1494979 -0.5273956 -0.6601945 0.534787 -0.7093676 -0.231208 0.6658381 -0.4461237 0.2068954 0.8707284 -0.4473037 -0.02369737 0.8940682 0.007084488 0.6612913 0.7500959 -0.616892 -0.4437468 0.6500256 -0.1001917 -0.6014277 0.79262 -0.3249089 -0.5237053 0.7875068 -0.00838983 -0.625221 0.7804027 -0.01220989 -0.700345 0.7137001 -0.1916824 -0.6180849 0.7623838 -0.5170083 -0.5093933 0.6879106 -0.7093362 -0.2312281 0.6658647 -0.1917076 -0.6180807 0.7623808 -0.01225626 -0.5524045 0.8334861 -0.00839895 -0.6252095 0.7804118 0.08328747 -0.1059064 -0.990882 -0.1781843 -0.1996383 -0.9635326 0.04168695 0.02179437 -0.998893 -0.4374326 -0.1923184 0.8784455 0.02554219 0.08992922 0.9956207 0.0184983 0.0254985 0.9995037 -0.1339771 0.2229678 0.9655752 -0.2745551 0.1357647 -0.9519389 -0.008094668 -0.06701099 -0.9977195 -0.008042097 -0.06702125 -0.9977192 -0.2241916 0.9473578 -0.2285857 0.824764 0.5637934 0.04360479 0.8426661 0.5249861 -0.1195977 0.9405905 -0.3394953 -0.005704283 0.6808885 -0.7245857 0.1066135 -0.242515 -0.9636723 -0.1119026 -0.2584313 -0.9654348 -0.03389626 -0.9772495 -0.0109753 -0.2118091 -0.2601068 -0.9545876 -0.1452828 -0.9176049 -0.205281 -0.3403836 -0.2262993 -0.8369544 -0.4982933 0.2061126 -0.8453782 -0.4928015 0.2459788 -0.957659 -0.1496125 0.9073448 -0.2083344 -0.3651331 0.975359 -0.01022434 -0.2203865 0.2496066 -0.9677679 -0.03349435 0.2377835 -0.9655833 -0.105394 -0.6868855 -0.7177184 0.1143177 -0.9400279 -0.3408828 0.01210063 -0.827407 0.5588936 0.05509912 -0.8444038 0.5256737 -0.1031966 0.2212058 0.9497333 -0.2215282 -0.9772477 -0.01102787 -0.2118145 -0.2704016 0.949003 -0.1621 -0.2684183 0.9601394 -0.0780006 0.8178778 0.537712 0.2047971 0.2623966 0.9513161 -0.1616967 0.2554006 0.9629217 -0.08690458 -0.8204959 0.5312874 0.210998 -0.8217256 -0.5585917 0.1128832 0.8177044 -0.5663114 0.1032045 0.9753589 -0.01022017 -0.2203875 0.9838104 0.01488763 -0.1785929 0.1381033 0.5184859 -0.8438602 0.1284754 0.9411507 -0.3126173 -0.7084544 0.6888834 -0.1534016 -0.8520346 0.2811046 -0.4416077 -0.8042654 -0.5769798 0.1423075 -0.4428752 -0.574406 -0.688418 0.2689922 -0.8869637 -0.3754181 0.7417753 -0.6490379 0.1688767 0.8533107 0.4407328 0.2785959 0.8042567 -0.576995 0.1422956 0.7084711 0.6888673 -0.1533974 -0.1765077 0.8160194 -0.5504156 -0.1285369 0.9411433 -0.3126139 -0.9837918 0.01489311 -0.1786954 -0.2689805 -0.8869858 -0.375374 -0.7653483 -0.04267638 -0.6422 -0.1900969 -0.9686542 0.1599128 0.7653639 -0.04269427 -0.6421802 0.1901394 -0.9686471 0.1599063 -0.1852204 0.9666063 -0.1771037 0.1851779 0.9666151 -0.1771 -0.7585108 -0.6500129 0.04631149 -0.5516039 -0.8332942 0.03679919 -0.7585161 -0.6500087 0.04628092 -0.2752261 -0.9606086 0.03849583 0.4313978 -0.8997079 0.06649607 0.4314169 -0.8996998 0.0664798 0.7821972 -0.6205906 0.05509102 -0.7718379 -0.5752253 0.2708917 -0.6136941 -0.7889035 -0.03179371 -0.8270966 -0.5598933 0.04930293 -0.3127899 -0.9302772 -0.1916947 0.4753981 -0.8702947 -0.1287783 0.4827142 -0.8243802 -0.2956084 0.8503588 -0.5234876 -0.05339199 0.7821968 -0.6205915 0.05508774 0.7897745 -0.5596867 0.2510124 -0.03717863 0.9937885 0.1048917 -0.0373252 0.9844776 0.1714957 0.06139814 0.9896513 0.1296942 0.04612058 0.9840869 0.1715981 -0.9811033 0.1604767 -0.1080914 0.05420631 0.9934598 -0.1004962 0.9895425 0.1379952 -0.04198956 -0.9879903 0.1489242 -0.04119318 -0.06002318 0.993156 -0.1001929 0.9819763 0.1556007 -0.1072897 -0.003195762 -0.9914835 -0.1301937 -0.03751498 -0.9910136 -0.1283928 0.03130489 -0.2502134 0.9676846 0.6191788 -0.2003773 0.759254 0.6888904 -0.1396973 0.7112768 0.04607325 -0.3112102 0.9492237 -0.5716208 -0.2014916 0.7953935 -0.6689121 -0.1201784 0.7335625 -0.06029659 -0.2519923 0.9658491 0.5565232 -0.1921852 0.8082987 0.6366661 -0.1202563 0.7617052 -0.0550794 -0.3129859 0.9481594 -0.65283 -0.2085965 0.7282174 -0.7328395 -0.1396206 0.6659222 0.5844128 0.8001303 0.1351046 -0.6677049 0.7328068 -0.1310129 -0.8974412 -0.33258 0.2898104 -0.9316053 -0.2393968 0.2734977 -0.7768291 0.6046988 -0.1757159 -0.8214791 -0.5487096 -0.155209 -0.863908 -0.4484326 0.229284 0.3833124 -0.9205762 -0.07490819 -0.7309245 -0.6509149 -0.2050838 -0.1597437 -0.4441097 -0.881617 -0.7329738 0.4725937 -0.4892899 0.5084962 0.2936834 -0.8094329 0.6490183 0.6647003 -0.3700661 -0.6489916 0.6647035 -0.3701071 0.7322162 0.4727051 -0.4903154 -0.5084591 0.2937121 -0.8094458 0.1596711 -0.4441154 -0.8816273 0.7560561 -0.6306734 -0.1750157 -0.3410966 -0.9378141 -0.06448167 0.8800221 -0.4147979 0.2313089 0.8299217 -0.5354806 -0.1564943 0.7763943 0.6054947 -0.1748949 0.9316005 -0.2394024 0.2735089 0.6677138 0.7328054 -0.1309751 0.897425 -0.3326269 0.2898066 -0.5844319 0.8001158 0.1351078 -0.4962832 -0.7932 0.3528978 -0.630094 -0.5862715 0.5091831 -0.1121042 -0.8295897 0.5470042 0.9185938 -0.3381719 0.2045123 -0.1587706 -0.987292 -0.006825089 0.7181074 0.09807038 -0.6889877 -0.2024862 -0.2041812 -0.9577628 0.02059447 -0.58891 -0.8079363 0.6300649 -0.5862932 0.5091943 0.1121054 -0.8295867 0.5470085 -0.9185892 -0.3381952 0.2044945 0.1588087 -0.9872859 -0.006803989 -0.7181158 0.09810012 -0.6889747 0.2024796 -0.2042127 -0.9577574 -0.02059346 -0.5889244 -0.8079258 0.6355022 -0.7694257 -0.06419581 -0.6355211 -0.7694094 -0.06420403 0.4962899 -0.7931962 0.3528968 0.704164 0.7073525 -0.06168824 -0.7041532 0.7073621 -0.06170207 0.85329 0.4407657 0.278607 -0.1765076 0.8159843 -0.5504679 0.7417702 -0.649037 0.1689027 -0.9102488 -0.07811546 -0.4066265 -0.9457829 -0.06709903 -0.3177933 0.8989897 -0.07999503 -0.4306025 0.984176 -0.03140425 -0.1743884 0.9356833 -0.06380367 -0.3470243 0.9841563 -0.03137743 -0.1745049 0.9851407 -0.03119599 -0.1688926 -0.7839255 -0.07923477 -0.6157782 0.7145997 -0.07889497 -0.6950705</float_array>
+          <technique_common>
+            <accessor source="#gordon_reference-mesh-normals-array" count="594" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gordon_reference-mesh-map-0">
+          <float_array id="gordon_reference-mesh-map-0-array" count="3996">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.627907 0.46988 0.395349 0.120482 0.325581 0.445783 0.325581 0.445783 0.395349 0.120482 0 0.337349 0.395349 0.120482 0 0 0 0.337349 0 0.337349 0 0 0 0.337349 0 0 0.395349 0.120482 0 0.337349 0 0.337349 0.395349 0.120482 0.325581 0.445783 0.395349 0.120482 0.627907 0.46988 0.325581 0.445783 0.325581 0.445783 0.627907 0.46988 0.674419 0.73494 0.627907 0.46988 0.325581 0.445783 0.674419 0.73494 0.674419 0.73494 0.325581 0.445783 0.488372 0.73494 0.325581 0.445783 0.023256 0.698795 0.488372 0.73494 0.488372 0.73494 0.023256 0.698795 0.139535 1 0.581395 0.566265 0.813953 0.590361 0.581395 0.578313 0.581395 0.578313 0.813953 0.590361 0.581395 0.554217 0.813953 0.590361 0.744186 0.518072 0.581395 0.554217 0.581395 0.554217 0.744186 0.518072 0.581395 0.566265 0.744186 0.518072 0.767442 0.518072 0.581395 0.566265 0.581395 0.566265 0.767442 0.518072 0.813953 0.590361 0.767442 0.518072 0.953488 0.445783 0.813953 0.590361 0.813953 0.590361 0.953488 0.445783 0.744186 0.518072 0.953488 0.445783 0.767442 0.518072 0.744186 0.518072 0 0.337349 0.325581 0.445783 0 0.518072 0 0.518072 0.325581 0.445783 0.023256 0.698795 0.325581 0.445783 0.488372 0.722892 0.023256 0.698795 0.023256 0.698795 0.488372 0.722892 0.139535 0.987952 0.488372 0.722892 0.511628 0.975904 0.139535 0.987952 0.674419 0.73494 0.488372 0.722892 0.325581 0.445783 0.674419 0.73494 0.511628 0.975904 0.488372 0.722892 0.674419 0.73494 0.627907 0.987952 0.511628 0.975904 0.674419 0.73494 0.511628 0.975904 0.627907 0.987952 0.674419 0.73494 0.488372 0.73494 0.511628 0.975904 0 0.337349 0 0.53012 0.325581 0.445783 0.325581 0.445783 0 0.53012 0.023256 0.698795 0.395349 0.120482 0.627907 0.46988 0.976744 0.2409639 0.976744 0.2409639 0.627907 0.46988 0.395349 0.120482 0.139535 1 0.511628 0.975904 0.488372 0.73494 0 0.337349 0 0 0 0.337349 0.745763 0.09677398 0.949153 0.333333 0.847458 0.172043 0.847458 0.172043 0.949153 0.333333 0.847458 0.408602 0.949153 0.333333 0.966102 0.591398 0.847458 0.408602 0.847458 0.408602 0.966102 0.591398 0.847458 0.569892 0.966102 0.591398 0.898305 0.655914 0.847458 0.569892 0.847458 0.569892 0.898305 0.655914 0.542373 0.591398 0.898305 0.655914 0.474576 0.741935 0.542373 0.591398 0.542373 0.591398 0.474576 0.741935 0.40678 0.591398 0.474576 0.741935 0.067797 0.655914 0.40678 0.591398 0.40678 0.591398 0.067797 0.655914 0.101695 0.569892 0.067797 0.655914 0 0.591398 0.101695 0.569892 0.101695 0.569892 0 0.591398 0.101695 0.408602 0 0.591398 0 0.333333 0.101695 0.408602 0.101695 0.408602 0 0.333333 0.1186439 0.172043 0 0.333333 0.220339 0.09677398 0.1186439 0.172043 0.1186439 0.172043 0.220339 0.09677398 0.338983 0.03225797 0.220339 0.09677398 0.745763 0.09677398 0.338983 0.03225797 0.338983 0.03225797 0.745763 0.09677398 0.644068 0.03225797 0.745763 0.09677398 0.847458 0.172043 0.644068 0.03225797 0.644068 0.03225797 0.847458 0.172043 0.745763 0.107527 0.847458 0.172043 0.677966 0.215054 0.745763 0.107527 0.745763 0.107527 0.677966 0.215054 0.644068 0.09677398 0.677966 0.215054 0.59322 0.215054 0.644068 0.09677398 0.644068 0.09677398 0.59322 0.215054 0.389831 0.215054 0.644068 0.09677398 0.576271 0 0.745763 0.107527 0.745763 0.107527 0.576271 0 0.644068 0.03225797 0.576271 0 0.389831 0 0.644068 0.03225797 0.644068 0.03225797 0.389831 0 0.338983 0.03225797 0.389831 0 0.220339 0.107527 0.338983 0.03225797 0.338983 0.03225797 0.220339 0.107527 0.1186439 0.172043 0.220339 0.107527 0.288136 0.215054 0.1186439 0.172043 0.1186439 0.172043 0.288136 0.215054 0.101695 0.408602 0.288136 0.215054 0.355932 0.376344 0.101695 0.408602 0.101695 0.408602 0.355932 0.376344 0.101695 0.569892 0.355932 0.376344 0.474576 0.55914 0.101695 0.569892 0.101695 0.569892 0.474576 0.55914 0.40678 0.591398 0.474576 0.55914 0.508475 0.55914 0.40678 0.591398 0.40678 0.591398 0.508475 0.55914 0.542373 0.591398 0.508475 0.55914 0.847458 0.569892 0.542373 0.591398 0.355932 0.376344 0.440678 0.376344 0.474576 0.55914 0.474576 0.55914 0.440678 0.376344 0.508475 0.55914 0.440678 0.376344 0.542373 0.376344 0.508475 0.55914 0.508475 0.55914 0.542373 0.376344 0.627119 0.376344 0.542373 0.376344 0.491525 0.354839 0.627119 0.376344 0.627119 0.376344 0.491525 0.354839 0.491525 0.333333 0.491525 0.354839 0.355932 0.376344 0.491525 0.333333 0.491525 0.333333 0.355932 0.376344 0.372881 0.2258059 0.355932 0.376344 0.288136 0.215054 0.372881 0.2258059 0.898305 0.870968 0.898305 0.655914 0.966102 0.591398 0.898305 0.870968 0.474576 0.741935 0.898305 0.655914 0.898305 0.870968 0.474576 0.870968 0.474576 0.741935 0.898305 0.870968 0.779661 0.967742 0.474576 0.870968 0.898305 0.870968 0.915254 0.956989 0.779661 0.967742 0.898305 0.870968 0.983051 0.946237 0.915254 0.956989 0.898305 0.870968 0.966102 0.591398 0.983051 0.946237 0.084746 0.870968 0 0.591398 0.067797 0.655914 0.084746 0.870968 0 0.956989 0 0.591398 0.084746 0.870968 0.067797 0.956989 0 0.956989 0.084746 0.870968 0.20339 0.967742 0.067797 0.956989 0.084746 0.870968 0.474576 0.870968 0.20339 0.967742 0.084746 0.870968 0.474576 0.741935 0.474576 0.870968 0.084746 0.870968 0.067797 0.655914 0.474576 0.741935 0.847458 0.408602 0.627119 0.376344 0.677966 0.215054 0.677966 0.215054 0.627119 0.376344 0.610169 0.2258059 0.627119 0.376344 0.491525 0.333333 0.610169 0.2258059 0.610169 0.2258059 0.491525 0.333333 0.491525 0.215054 0.491525 0.333333 0.372881 0.2258059 0.491525 0.215054 0.338983 0.09677398 0.220339 0.107527 0.389831 0 0.338983 0.09677398 0.288136 0.215054 0.220339 0.107527 0.338983 0.09677398 0.389831 0.215054 0.288136 0.215054 0.338983 0.09677398 0.644068 0.09677398 0.389831 0.215054 0.338983 0.09677398 0.389831 0 0.644068 0.09677398 0.491525 0.956989 0.20339 0.967742 0.474576 0.870968 0.491525 0.956989 0.491525 1 0.20339 0.967742 0.491525 0.956989 0.779661 0.967742 0.491525 1 0.491525 0.956989 0.474576 0.870968 0.779661 0.967742 0.542373 0.376344 0.440678 0.376344 0.491525 0.354839 0.491525 0.354839 0.440678 0.376344 0.355932 0.376344 0.508475 0.55914 0.627119 0.376344 0.847458 0.569892 0.847458 0.569892 0.627119 0.376344 0.847458 0.408602 0.847458 0.408602 0.677966 0.215054 0.847458 0.172043 0.389831 0 0.576271 0 0.644068 0.09677398 0.483871 0.294118 0.774194 0.117647 0.935484 0.235294 0.483871 0.294118 0.483871 0 0.774194 0.117647 0.483871 0.294118 0.193548 0.117647 0.483871 0 0.483871 0.294118 0.064516 0.235294 0.193548 0.117647 0.483871 0.294118 0 0.558824 0.064516 0.235294 0.483871 0.294118 0.483871 0.617647 0 0.558824 0.483871 0.294118 1 0.558824 0.483871 0.617647 0.483871 0.294118 0.935484 0.235294 1 0.558824 0.483871 0.617647 0.09677398 0.911765 0 0.558824 0.483871 0.617647 0.483871 1 0.09677398 0.911765 0.483871 0.617647 0.83871 0.911765 0.483871 1 0.483871 0.617647 1 0.558824 0.83871 0.911765 0.222222 0.692308 0.444444 1 0.666667 0.692308 0.666667 0.692308 0.444444 1 0.777778 0.884615 0.444444 1 0.444444 1 0.777778 0.884615 0.777778 0.884615 0.444444 1 0.444444 0.884615 0.444444 1 0.111111 0.884615 0.444444 0.884615 0.444444 0.884615 0.111111 0.884615 0.444444 0.153846 0.111111 0.884615 0.03703695 0.461538 0.444444 0.153846 0.444444 0.153846 0.03703695 0.461538 0 0.03846198 0.03703695 0.461538 0.222222 0.692308 0 0.03846198 0 0.03846198 0.222222 0.692308 0.185185 0 0.222222 0.692308 0.666667 0.692308 0.185185 0 0.185185 0 0.666667 0.692308 0.703704 0 0.666667 0.692308 0.925926 0.115385 0.703704 0 0.888889 0.115385 0.666667 0.692308 0.703704 0 0.703704 0 0.666667 0.692308 0.185185 0 0.666667 0.692308 0.222222 0.692308 0.185185 0 0.185185 0 0.222222 0.692308 0.03703695 0.03846198 0.222222 0.692308 0.03703695 0.423077 0.03703695 0.03846198 0.03703695 0.03846198 0.03703695 0.423077 0.444444 0.153846 0.03703695 0.423077 0.148148 0.846154 0.444444 0.153846 0.444444 0.153846 0.148148 0.846154 0.444444 0.884615 0.148148 0.846154 0.444444 0.961538 0.444444 0.884615 0.444444 0.884615 0.444444 0.961538 0.740741 0.884615 0.444444 0.961538 0.444444 1 0.740741 0.884615 0.740741 0.884615 0.444444 1 0.666667 0.692308 0.444444 1 0.222222 0.692308 0.666667 0.692308 0.888889 0.461538 0.777778 0.884615 0.444444 0.153846 0.888889 0.461538 0.666667 0.692308 0.777778 0.884615 0.888889 0.461538 0.925926 0.115385 0.666667 0.692308 0.888889 0.461538 0.444444 0.153846 0.925926 0.115385 0.888889 0.461538 0.444444 0.153846 0.740741 0.884615 0.888889 0.461538 0.888889 0.115385 0.444444 0.153846 0.888889 0.461538 0.666667 0.692308 0.888889 0.115385 0.888889 0.461538 0.740741 0.884615 0.666667 0.692308 0.03703695 0.461538 0.111111 0.884615 0.222222 0.692308 0.222222 0.692308 0.111111 0.884615 0.444444 1 0.111111 0.884615 0.444444 1 0.444444 1 0.444444 0.961538 0.148148 0.846154 0.444444 1 0.444444 1 0.148148 0.846154 0.222222 0.692308 0.148148 0.846154 0.03703695 0.423077 0.222222 0.692308 0.777778 0.884615 0.444444 0.884615 0.444444 0.153846 0.740741 0.884615 0.444444 0.153846 0.444444 0.884615 0.01818197 0.07547199 0.181818 0.009433984 0.03636395 0.254717 0.03636395 0.254717 0.181818 0.009433984 0.181818 0.273585 0.181818 0.009433984 0.490909 0.103774 0.181818 0.273585 0.181818 0.273585 0.490909 0.103774 0.8 0.273585 0.490909 0.103774 0.8 0 0.8 0.273585 0.8 0.273585 0.8 0 0.945455 0.254717 0.8 0 0.963636 0.08490598 0.945455 0.254717 0.490909 0.839623 0.490909 1 0.090909 0.971698 0.490909 0.839623 0.872727 0.971698 0.490909 1 0.490909 0.839623 0.909091 0.839623 0.872727 0.971698 0.490909 0.839623 0.745455 0.584906 0.909091 0.839623 0.490909 0.839623 0.2 0.584906 0.745455 0.584906 0.490909 0.839623 0.05454498 0.839623 0.2 0.584906 0.490909 0.839623 0.090909 0.971698 0.05454498 0.839623 0.854545 0.377358 0.745455 0.584906 0.727273 0.40566 0.727273 0.40566 0.745455 0.584906 0.236364 0.40566 0.745455 0.584906 0.2 0.584906 0.236364 0.40566 0.236364 0.40566 0.2 0.584906 0.109091 0.377358 0.2 0.584906 0 0.603774 0.109091 0.377358 0.181818 0.009433984 0.490909 0.009433984 0.490909 0.103774 0.490909 0.103774 0.490909 0.009433984 0.8 0 0.854545 0.377358 0.727273 0.40566 0.945455 0.254717 0.236364 0.40566 0.109091 0.377358 0.03636395 0.254717 0.963636 0.603774 0.745455 0.584906 0.854545 0.377358 0.765957 0.34375 0.489362 0.635417 0.765957 0.6875 0.765957 0.34375 0.510638 0.333333 0.489362 0.635417 0.765957 0.34375 0.531915 0.15625 0.510638 0.333333 0.765957 0.34375 0.744681 0.208333 0.531915 0.15625 0.765957 0.34375 0.93617 0.15625 0.744681 0.208333 0.765957 0.34375 0.978723 0.40625 0.93617 0.15625 0.765957 0.34375 0.978723 0.697917 0.978723 0.40625 0.765957 0.34375 0.765957 0.6875 0.978723 0.697917 0.234043 0.34375 0.234043 0.677083 0.489362 0.635417 0.234043 0.34375 0 0.6875 0.234043 0.677083 0.234043 0.34375 0.02127695 0.40625 0 0.6875 0.234043 0.34375 0.08510595 0.15625 0.02127695 0.40625 0.234043 0.34375 0.255319 0.208333 0.08510595 0.15625 0.234043 0.34375 0.468085 0.15625 0.255319 0.208333 0.234043 0.34375 0.489362 0.333333 0.468085 0.15625 0.234043 0.34375 0.489362 0.635417 0.489362 0.333333 0.765957 0.729167 0.957447 0.875 0.978723 0.697917 0.765957 0.729167 0.723404 0.802083 0.957447 0.875 0.765957 0.729167 0.276596 0.802083 0.723404 0.802083 0.765957 0.729167 0.234043 0.729167 0.276596 0.802083 0.765957 0.729167 0.489362 0.635417 0.234043 0.729167 0.765957 0.729167 0.765957 0.6875 0.489362 0.635417 0.765957 0.729167 0.978723 0.697917 0.765957 0.6875 0.957447 0.875 0.723404 0.802083 0.87234 1 0.87234 1 0.723404 0.802083 0.659574 0.979167 0.723404 0.802083 0.276596 0.802083 0.659574 0.979167 0.659574 0.979167 0.276596 0.802083 0.319149 0.979167 0.276596 0.802083 0.106383 1 0.319149 0.979167 0.234043 0.729167 0.02127695 0.875 0.276596 0.802083 0.234043 0.729167 0 0.6875 0.02127695 0.875 0.234043 0.729167 0.234043 0.677083 0 0.6875 0.234043 0.729167 0.489362 0.635417 0.234043 0.677083 0.744681 0 0.93617 0.15625 0.893617 0.04166698 0.744681 0 0.744681 0.135417 0.93617 0.15625 0.744681 0 0.531915 0.15625 0.744681 0.135417 0.744681 0 0.553191 0.04166698 0.531915 0.15625 0.255319 0 0.468085 0.15625 0.446809 0.04166698 0.255319 0 0.255319 0.135417 0.468085 0.15625 0.255319 0 0.08510595 0.15625 0.255319 0.135417 0.255319 0 0.106383 0.04166698 0.08510595 0.15625 0.531915 0.15625 0.744681 0.208333 0.744681 0.135417 0.744681 0.135417 0.744681 0.208333 0.93617 0.15625 0.468085 0.15625 0.255319 0.135417 0.255319 0.208333 0.255319 0.208333 0.255319 0.135417 0.08510595 0.15625 0.02127695 0.875 0.106383 1 0.276596 0.802083 0.612903 0.355932 0.322581 0.864407 0.870968 0.864407 0.612903 0.355932 0.290323 0.423729 0.322581 0.864407 0.612903 0.355932 0.451613 0.01694899 0.290323 0.423729 0.612903 0.355932 0.83871 0 0.451613 0.01694899 0.612903 0.355932 0.870968 0.338983 0.83871 0 0.612903 0.355932 0.870968 0.881356 0.870968 0.338983 0.612903 0.355932 0.870968 0.864407 0.870968 0.881356 0.645161 0.355932 0.935484 0.864407 0.322581 0.864407 0.645161 0.355932 0.935484 0.881356 0.935484 0.864407 0.645161 0.355932 0.903226 0.322034 0.935484 0.881356 0.645161 0.355932 0.903226 0 0.903226 0.322034 0.645161 0.355932 0.483871 0.01694899 0.903226 0 0.645161 0.355932 0.258065 0.423729 0.483871 0.01694899 0.645161 0.355932 0.322581 0.864407 0.258065 0.423729 0 1 0.064516 0.457627 0.322581 0.864407 0.322581 0.864407 0.064516 0.457627 0.258065 0.423729 0.064516 0.457627 0.16129 0 0.258065 0.423729 0.258065 0.423729 0.16129 0 0.483871 0.01694899 0.322581 0.864407 0.290323 0.423729 0.064516 0.457627 0.064516 0.457627 0.290323 0.423729 0.129032 0 0.290323 0.423729 0.451613 0.01694899 0.129032 0 0.064516 0.457627 0.064516 1 0.322581 0.864407 0.428571 0 1 0.222222 0 0.222222 0 0.222222 1 0.222222 0 0.888889 1 0.222222 1 0.888889 0 0.888889 0 0.888889 1 0.888889 0.428571 1 0.857143 0.888889 1 0.222222 0 0.888889 0 0.888889 1 0.222222 0 0.222222 1 0.222222 0.428571 0 0 0.222222 0.571429 1 0.857143 0.888889 0 0.888889 0.109091 0.403846 0.327273 0.173077 0.236364 0.692308 0.236364 0.692308 0.327273 0.173077 0.727273 0.692308 0.327273 0.173077 0.654545 0.173077 0.727273 0.692308 0.727273 0.692308 0.654545 0.173077 0.854545 0.403846 0.654545 0.173077 0.709091 0.134615 0.854545 0.403846 0.672727 1 0.472727 1 0.727273 0.692308 0.727273 0.692308 0.472727 1 0.236364 0.692308 0.472727 1 0.290909 1 0.236364 0.692308 0.090909 0 0.236364 0.115385 0 0.480769 0 0.480769 0.236364 0.115385 0.109091 0.403846 0.709091 0.134615 0.854545 0 0.854545 0.403846 0.854545 0.403846 0.854545 0 0.963636 0.480769 0.109091 0.403846 0.236364 0.115385 0.327273 0.173077 0.481481 0 0.185185 0.208333 0.185185 0 0.185185 0 0.185185 0.208333 0.03703695 0.333333 0.185185 0.208333 0.185185 0.583333 0.03703695 0.333333 0.03703695 0.333333 0.185185 0.583333 0 0.666667 0.185185 0.583333 0.444444 0.958333 0 0.666667 0 0.666667 0.444444 0.958333 0.481481 1 0.444444 0.958333 0.962963 0.666667 0.481481 1 0.925926 0.333333 0.740741 0.208333 0.740741 0 0.740741 0 0.740741 0.208333 0.481481 0 0.740741 0.208333 0.481481 0.08333295 0.481481 0 0.481481 0 0.481481 0.08333295 0.185185 0.208333 0.925926 0.333333 0.777778 0.583333 0.740741 0.208333 0.740741 0.208333 0.777778 0.583333 0.481481 0.08333295 0.777778 0.583333 0.444444 0.291667 0.481481 0.08333295 0.481481 0.08333295 0.444444 0.291667 0.185185 0.583333 0.444444 0.958333 0.777778 0.583333 0.962963 0.666667 0.962963 0.666667 0.777778 0.583333 0.925926 0.333333 0.185185 0.583333 0.185185 0.208333 0.481481 0.08333295 0.363636 1 0.181818 1 0.181818 0 0.363636 1 0 0.4 0.181818 1 0.363636 1 0.181818 0 0 0.4 0.363636 1 0.636364 0 0.181818 0 0.363636 1 0.545455 1 0.636364 0 0.363636 1 0.818182 0.4 0.545455 1 0.363636 1 0.636364 0 0.818182 0.4 0.363636 1 0.363636 0 0.636364 0 0.363636 1 0.181818 0 0.363636 0 0.181818 1 0 0.4 0.181818 0 0.545455 1 0.818182 0.4 0.636364 0 0.774194 0.088889 0.774194 0.533333 0.645161 0.06666696 0.645161 0.06666696 0.774194 0.533333 0.258065 0.02222198 0.774194 0.533333 0.2258059 0.533333 0.258065 0.02222198 0.258065 0.02222198 0.2258059 0.533333 0.129032 0.04444396 0.2258059 0.533333 0.03225797 0.466667 0.129032 0.04444396 0.129032 0.04444396 0.03225797 0.466667 0.516129 0.511111 0.03225797 0.466667 0.09677398 0.866667 0.516129 0.511111 0.516129 0.511111 0.09677398 0.866667 0.516129 1 0.09677398 0.866667 0.03225797 1 0.516129 1 0 0.977778 0.09677398 0.866667 0.483871 1 0.483871 1 0.09677398 0.866667 0.483871 0.511111 0.09677398 0.866667 0.03225797 0.466667 0.483871 0.511111 0.483871 0.511111 0.03225797 0.466667 0.129032 0.02222198 0.03225797 0.466667 0.2258059 0.533333 0.129032 0.02222198 0.129032 0.02222198 0.2258059 0.533333 0.258065 0.02222198 0.2258059 0.533333 0.774194 0.533333 0.258065 0.02222198 0.258065 0.02222198 0.774194 0.533333 0.645161 0.04444396 0.774194 0.533333 0.741935 0.088889 0.645161 0.04444396 0.129032 0.04444396 0.516129 0.511111 0.451613 0 0.451613 0 0.516129 0.511111 0.774194 0.088889 0.516129 0.511111 0.903226 0.533333 0.774194 0.088889 0.774194 0.088889 0.903226 0.533333 0.774194 0.533333 0.903226 0.533333 0.935484 0.933333 0.774194 0.533333 0.774194 0.533333 0.935484 0.933333 0.774194 0.888889 0.741935 0.088889 0.903226 0.533333 0.483871 0.511111 0.483871 0.511111 0.903226 0.533333 0.935484 0.933333 0.903226 0.533333 0.774194 0.533333 0.935484 0.933333 0.935484 0.933333 0.774194 0.533333 0.741935 0.911111 0.774194 0.533333 0.2258059 0.911111 0.741935 0.911111 0.774194 0.888889 0.258065 0.888889 0.774194 0.533333 0.774194 0.533333 0.258065 0.888889 0.2258059 0.533333 0.258065 0.888889 0.09677398 0.866667 0.2258059 0.533333 0.2258059 0.533333 0.09677398 0.866667 0.03225797 0.466667 0.774194 0.533333 0.2258059 0.533333 0.2258059 0.911111 0.2258059 0.911111 0.2258059 0.533333 0.09677398 0.866667 0.2258059 0.533333 0.03225797 0.466667 0.09677398 0.866667 0.903226 0.533333 0.516129 0.511111 0.935484 0.933333 0.935484 0.933333 0.516129 0.511111 0.516129 1 0.129032 0.02222198 0.419355 0 0.483871 0.511111 0.483871 0.511111 0.419355 0 0.741935 0.088889 0.258065 0.888889 0.03225797 1 0.09677398 0.866667 0.903226 0.533333 0.741935 0.088889 0.774194 0.533333 0.483871 0.511111 0.935484 0.933333 0.483871 1 0.2258059 0.911111 0.09677398 0.866667 0 0.977778 0.481481 0.914286 0.555556 0 0.814815 0.8 0.814815 0.8 0.555556 0 0.703704 1 0.555556 0 0.481481 0 0.703704 1 0.703704 1 0.481481 0 0.333333 0.971429 0.481481 0 0 0.08571398 0.333333 0.971429 0.333333 0.971429 0 0.08571398 0 0.08571398 0.03703695 0.08571398 0.481481 0.02857095 0.333333 1 0.333333 1 0.481481 0.02857095 0.740741 1 0.481481 0.02857095 0.555556 0 0.740741 1 0.740741 1 0.555556 0 0.851852 0.828571 0.555556 0 0.481481 0.914286 0.851852 0.828571 0 0.114286 0.481481 0.914286 0.37037 0.05714297 0 0.114286 0.148148 0.942857 0.481481 0.914286 0 0.114286 0.333333 1 0.148148 0.942857 0 0.114286 0.03703695 0.08571398 0.333333 1 0.555556 0 0.481481 0.914286 0.333333 0.02857095 0.333333 0.02857095 0.481481 0.914286 0 0.08571398 0.481481 0.914286 0.111111 0.942857 0 0.08571398 0 0.08571398 0.111111 0.942857 0.333333 0.971429 0.481481 0.914286 0.925926 0.971429 0.851852 0.828571 0.851852 0.828571 0.925926 0.971429 0.740741 1 0.481481 0.914286 0.814815 0.8 0.888889 0.971429 0.888889 0.971429 0.814815 0.8 0.703704 1 0.37037 0.05714297 0.481481 0.914286 0.555556 0 0.923077 0 0.641026 0 0.897436 0.5 0.897436 0.5 0.641026 0 0.641026 0.5 0.641026 0 0.25641 0 0.641026 0.5 0.641026 0.5 0.25641 0 0.282051 0.5 0.25641 0 0.02564096 0.5 0.282051 0.5 0.923077 0.5 0.641026 0.5 0.923077 1 0.923077 1 0.641026 0.5 0.666667 1 0.641026 0.5 0.25641 0.5 0.666667 1 0.666667 1 0.25641 0.5 0.230769 1 0.25641 0.5 0 1 0.230769 1 0.25641 0 0 0 0.02564096 0.5 0 1 0.25641 0.5 0 0.5 0.518519 1 0.814815 0.272727 0.888889 0.909091 0.518519 1 0.518519 0.04545497 0.814815 0.272727 0.518519 1 0.185185 0.272727 0.518519 0.04545497 0.518519 1 0.111111 0.909091 0.185185 0.272727 0.518519 1 0.07407397 0.227273 0 0.954545 0.518519 1 0.518519 0 0.07407397 0.227273 0.518519 1 0.888889 0.227273 0.518519 0 0.518519 1 0.925926 0.954545 0.888889 0.227273 0.947368 0.87234 0.105263 0.02127695 0 1 0.947368 0.87234 0.789474 0.148936 0.105263 0.02127695 0.947368 0.87234 0.157895 0 0.789474 0.148936 0.947368 0.87234 0 1 0.157895 0 0.947368 0.87234 0.157895 0 0 1 0.947368 0.87234 0.789474 0.148936 0.157895 0 0.947368 0.87234 0.105263 0.02127695 0.789474 0.148936 0.947368 0.87234 0 1 0.105263 0.02127695 0.232558 0.07142895 0 0.785714 0.093023 0 0.232558 0.07142895 0.209302 1 0 0.785714 0.232558 0.07142895 0.44186 0.785714 0.209302 1 0.232558 0.07142895 0.395349 0 0.44186 0.785714 0.674419 0.07142895 0.488372 0.785714 0.511628 0 0.674419 0.07142895 0.72093 1 0.488372 0.785714 0.674419 0.07142895 0.930233 0.785714 0.72093 1 0.674419 0.07142895 0.837209 0 0.930233 0.785714 0.483871 0.785714 0.83871 0.321429 0.967742 0.982143 0.483871 0.785714 0.483871 0.01785695 0.83871 0.321429 0.483871 0.785714 0.09677398 0.321429 0.483871 0.01785695 0.483871 0.785714 0 0.982143 0.09677398 0.321429 0.419355 0.785714 0.903226 0.303571 1 1 0.419355 0.785714 0.483871 0 0.903226 0.303571 0.419355 0.785714 0.09677398 0.321429 0.483871 0 0.419355 0.785714 0 1 0.09677398 0.321429 0.947368 0.931034 0.894737 0.655172 0.736842 0.965517 0.736842 0.965517 0.894737 0.655172 0.526316 0.724138 0.894737 0.655172 0.789474 0.310345 0.526316 0.724138 0.526316 0.724138 0.789474 0.310345 0.315789 0.413793 0.789474 0.310345 0.210526 0.206897 0.315789 0.413793 0.315789 0.413793 0.210526 0.206897 0.210526 0.172414 0.210526 0.206897 0.263158 0.03448295 0.210526 0.172414 0.210526 0.172414 0.263158 0.03448295 0.210526 0 0.263158 0.03448295 0.578947 0.03448295 0.210526 0 0.210526 0 0.578947 0.03448295 0.578947 0 0.578947 0.03448295 0.789474 0.310345 0.578947 0 0.736842 0.310345 0.526316 0.03448295 0.526316 0 0.526316 0 0.526316 0.03448295 0.210526 0 0.526316 0.03448295 0.210526 0.03448295 0.210526 0 0.210526 0 0.210526 0.03448295 0.157895 0.172414 0.210526 0.03448295 0.210526 0.206897 0.157895 0.172414 0.157895 0.172414 0.210526 0.206897 0.315789 0.413793 0.210526 0.206897 0.736842 0.310345 0.315789 0.413793 0.315789 0.413793 0.736842 0.310345 0.526316 0.724138 0.736842 0.310345 0.842105 0.655172 0.526316 0.724138 0.526316 0.724138 0.842105 0.655172 0.684211 0.965517 0.842105 0.655172 0.894737 0.931034 0.684211 0.965517 0.578947 1 0.473684 0.758621 0.684211 0.965517 0.684211 0.965517 0.473684 0.758621 0.526316 0.724138 0.473684 0.758621 0.157895 0.62069 0.526316 0.724138 0.526316 0.724138 0.157895 0.62069 0.210526 0.62069 0.157895 0.62069 0 0.448276 0.210526 0.62069 0.210526 0.62069 0 0.448276 0.05263197 0.448276 0 0.448276 0.05263197 0.448276 0.05263197 0.448276 0.05263197 0.448276 0.05263197 0.448276 0.210526 0.517241 0.736842 0.965517 0.526316 0.724138 0.473684 0.758621 0.473684 0.758621 0.526316 0.724138 0.210526 0.655172 0.526316 0.724138 0.263158 0.62069 0.210526 0.655172 0.210526 0.655172 0.263158 0.62069 0 0.448276 0.263158 0.62069 0.05263197 0.448276 0 0.448276 0 0.448276 0.05263197 0.448276 0.05263197 0.448276 0.05263197 0.448276 0.263158 0.517241 0.05263197 0.448276 0.315789 0.413793 0.263158 0.62069 0.526316 0.724138 0.315789 0.413793 0.263158 0.517241 0.263158 0.62069 0.315789 0.413793 0.263158 0.413793 0.263158 0.517241 0.315789 0.413793 0.210526 0.172414 0.263158 0.413793 0.157895 0.172414 0.315789 0.413793 0.210526 0.413793 0.210526 0.413793 0.315789 0.413793 0.210526 0.517241 0.315789 0.413793 0.210526 0.62069 0.210526 0.517241 0.210526 0.517241 0.210526 0.62069 0.05263197 0.448276 0.789474 0.310345 0.578947 0.03448295 0.789474 0.310345 0.789474 0.310345 0.578947 0.03448295 0.210526 0.206897 0.578947 0.03448295 0.263158 0.03448295 0.210526 0.206897 0.210526 0.03448295 0.526316 0.03448295 0.210526 0.206897 0.210526 0.206897 0.526316 0.03448295 0.736842 0.310345 0.526316 0.03448295 0.736842 0.310345 0.736842 0.310345 0.736842 0.965517 0.473684 0.758621 0.578947 1 0.263158 0.517241 0.05263197 0.448276 0.263158 0.62069 0.315789 0.413793 0.526316 0.724138 0.210526 0.62069 0.628571 1 0.514286 0.767857 0.971429 0.928571 0.971429 0.928571 0.514286 0.767857 0.914286 0.696429 0.514286 0.767857 0.257143 0.428571 0.914286 0.696429 0.914286 0.696429 0.257143 0.428571 0.8 0.339286 0.257143 0.428571 0.2285709 0.196429 0.8 0.339286 0.8 0.339286 0.2285709 0.196429 0.6 0.01785695 0.2285709 0.196429 0.2285709 0.01785695 0.6 0.01785695 0.914286 0.660714 0.914286 0.678571 0.971429 0.928571 0.971429 0.928571 0.914286 0.678571 0.485714 0.75 0.914286 0.678571 0.257143 0.410714 0.485714 0.75 0.485714 0.75 0.257143 0.410714 0.2 0.642857 0.257143 0.410714 0.2285709 0.517857 0.2 0.642857 0.2 0.642857 0.2285709 0.517857 0 0.464286 0.2285709 0.517857 0.05714297 0.446429 0 0.464286 0.514286 0.767857 0.2 0.642857 0.257143 0.428571 0.257143 0.428571 0.2 0.642857 0.257143 0.517857 0.2 0.642857 0.02857095 0.464286 0.257143 0.517857 0.257143 0.517857 0.02857095 0.464286 0.05714297 0.446429 0.8 0.339286 0.914286 0.678571 0.8 0.339286 0.8 0.339286 0.257143 0.410714 0.914286 0.678571 0.8 0.339286 0.2 0.178571 0.257143 0.410714 0.8 0.339286 0.571429 0 0.2 0.178571 0.971429 0.928571 0.914286 0.696429 0.914286 0.678571 0.914286 0.678571 0.914286 0.696429 0.8 0.339286 0.914286 0.696429 0.8 0.339286 0.8 0.339286 0.8 0.339286 0.914286 0.678571 0.914286 0.660714 0.485714 0.75 0.6 0.982143 0.971429 0.928571 0.571429 0 0.2 0.01785695 0.2 0.178571 0 0.882353 0.466667 1 0 0 0 0 0.466667 1 0.466667 0 0.466667 1 0.933333 0.647059 0.466667 0 0.866667 0.588235 0.4 0.941176 0.4 0 0.4 0 0.4 0.941176 0 0.058824 0 0.823529 0.4 0.941176 0 0.058824 0.962963 0.722222 0.962963 0.222222 0 0.722222 0 0.722222 0.962963 0.222222 0 0.25 0.962963 0.222222 0.481481 0 0 0.25 0 0.722222 0 0.25 0.962963 0.722222 0.962963 0.722222 0 0.25 0.962963 0.222222 0 0.25 0.481481 0 0.962963 0.222222 0.481481 1 0.962963 0.722222 0 0.722222 0.962963 0.722222 0.481481 0.972222 0 0.722222</float_array>
+          <technique_common>
+            <accessor source="#gordon_reference-mesh-map-0-array" count="1998" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="gordon_reference-mesh-vertices">
+          <input semantic="POSITION" source="#gordon_reference-mesh-positions"/>
+        </vertices>
+        <triangles material="PLAYER_Chrome1-material" count="144">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 1 1 1 2 2 2 2 2 3 1 1 4 3 3 5 1 1 6 4 4 7 3 3 8 3 3 9 4 4 10 5 5 11 4 4 12 6 6 13 5 5 14 5 5 15 6 6 16 7 7 17 6 6 18 8 8 19 7 7 20 7 7 21 8 8 22 9 9 23 10 10 24 11 11 25 12 12 26 12 12 27 11 11 28 13 13 29 11 11 30 14 14 31 13 13 32 13 13 33 14 14 34 15 15 35 14 14 36 16 16 37 15 15 38 15 15 39 16 16 40 17 17 41 16 16 42 18 18 43 17 17 44 17 17 45 18 18 46 19 19 47 20 20 48 21 21 49 22 22 50 22 22 51 21 21 52 23 23 53 21 21 54 24 24 55 23 23 56 23 23 57 24 24 58 25 25 59 24 24 60 26 26 61 25 25 62 25 25 63 26 26 64 27 27 65 28 28 66 29 29 67 30 30 68 30 30 69 29 29 70 31 31 71 29 29 72 32 32 73 31 31 74 31 31 75 32 32 76 33 33 77 32 32 78 34 34 79 33 33 80 33 33 81 34 34 82 35 35 83 36 36 84 18 18 85 37 37 86 36 36 87 19 19 88 18 18 89 36 36 90 38 38 91 19 19 92 36 36 93 39 39 94 38 38 95 36 36 96 40 40 97 39 39 98 41 41 99 42 42 100 43 43 101 43 43 102 42 42 103 44 44 104 42 42 105 45 45 106 44 44 107 44 44 108 45 45 109 46 46 110 45 45 111 47 47 112 46 46 113 0 48 114 48 49 115 49 50 116 49 50 117 48 49 118 10 51 119 48 49 120 50 52 121 10 51 122 10 51 123 50 52 124 11 53 125 50 52 126 16 54 127 11 53 128 51 55 129 52 56 130 53 57 131 53 57 132 52 56 133 54 58 134 52 56 135 55 59 136 54 58 137 54 58 138 55 59 139 56 60 140 55 59 141 57 61 142 56 60 143 13 13 144 40 40 145 12 12 146 13 13 147 39 39 148 40 40 149 13 13 150 58 62 151 39 39 152 13 13 153 15 15 154 58 62 155 59 63 156 60 64 157 61 65 158 61 65 159 60 64 160 62 66 161 60 64 162 63 67 163 62 66 164 62 66 165 63 67 166 64 68 167 65 69 168 5 70 169 66 71 170 65 69 171 2 72 172 5 70 173 65 69 174 0 48 175 2 72 176 65 69 177 48 49 178 0 48 179 67 73 180 68 74 181 69 75 182 67 73 183 70 76 184 68 74 185 67 73 186 71 77 187 70 76 188 67 73 189 72 78 190 71 77 191 73 79 192 74 80 193 75 81 194 75 81 195 74 80 196 76 82 197 74 80 198 77 83 199 76 82 200 76 82 201 77 83 202 78 84 203 21 21 204 20 20 205 79 85 206 79 85 207 20 20 208 80 86 209 20 20 210 81 87 211 80 86 212 80 86 213 81 87 214 82 88 215 29 29 216 28 28 217 83 89 218 83 89 219 28 28 220 35 35 221 28 28 222 84 90 223 35 35 224 35 35 225 84 90 226 33 33 227 85 91 228 86 92 229 87 93 230 85 91 231 88 94 232 86 92 233 85 91 234 89 95 235 88 94 236 85 91 237 90 96 238 89 95 239 91 97 240 56 60 241 57 61 242 91 97 243 92 98 244 56 60 245 91 97 246 93 99 247 92 98 248 91 97 249 94 100 250 93 99 251 4 4 252 1 1 253 95 101 254 95 101 255 1 1 256 96 102 257 1 1 258 97 103 259 96 102 260 98 104 261 99 105 262 100 106 263 100 106 264 99 105 265 101 107 266 99 105 267 68 74 268 101 107 269 94 100 270 102 108 271 93 99 272 93 99 273 102 108 274 51 55 275 102 108 276 52 56 277 51 55 278 50 52 279 103 109 280 16 54 281 16 54 282 103 109 283 104 110 284 0 111 285 105 112 286 1 113 287 1 113 288 105 112 289 97 114 290 8 115 291 106 116 292 9 117 293 9 117 294 106 116 295 96 118 296 72 78 297 98 104 298 71 77 299 71 77 300 98 104 301 100 106 302 73 79 303 107 119 304 78 84 305 78 84 306 107 119 307 76 82 308 25 25 309 27 27 310 82 88 311 82 88 312 27 27 313 80 86 314 108 120 315 109 121 316 110 122 317 110 122 318 109 121 319 111 123 320 112 124 321 113 125 322 114 126 323 114 126 324 113 125 325 115 127 326 96 128 327 97 129 328 9 130 329 37 131 330 18 132 331 104 133 332 103 109 333 116 134 334 104 110 335 14 14 336 11 11 337 16 16 338 104 135 339 18 18 340 16 16 341 117 136 342 47 47 343 45 45 344 9 9 345 118 137 346 7 7 347 119 138 348 7 139 349 118 140 350 119 141 351 120 142 352 66 71 353 66 71 354 5 70 355 119 141 356 5 5 357 2 2 358 3 3 359 5 5 360 7 7 361 119 143 362 99 105 363 69 75 364 68 74 365 86 92 366 121 144 367 87 93 368 90 96 369 121 144 370 89 95 371 122 145 372 110 146 373 111 147 374 111 148 375 109 149 376 122 150 377 122 151 378 108 152 379 110 153 380 108 154 381 122 155 382 109 156 383 123 157 384 115 158 385 113 159 386 115 160 387 123 161 388 114 162 389 123 163 390 113 164 391 112 165 392 112 166 393 114 167 394 123 168 395 124 169 396 125 170 397 126 171 398 126 172 399 127 173 400 124 174 401 128 175 402 129 176 403 130 177 404 129 178 405 128 179 406 127 180 407 110 181 408 131 182 409 132 183 410 132 184 411 133 185 412 110 186 413 134 187 414 135 188 415 136 189 416 135 190 417 134 191 418 133 192 419 113 193 420 137 194 421 138 195 422 137 196 423 113 197 424 139 198 425 140 199 426 141 200 427 142 201 428 142 202 429 139 203 430 140 204 431</p>
+        </triangles>
+        <triangles material="PLAYER_FaceSide1-material" count="37">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>143 205 432 144 206 433 145 207 434 145 207 435 144 206 436 146 208 437 144 206 438 147 209 439 146 208 440 146 208 441 147 209 442 148 210 443 147 209 444 149 211 445 148 210 446 148 212 447 149 213 448 150 214 449 149 213 450 143 205 451 150 214 452 150 214 453 143 205 454 151 215 455 143 205 456 145 207 457 151 215 458 151 215 459 145 207 460 152 216 461 145 207 462 153 217 463 152 216 464 152 216 465 153 217 466 154 218 467 155 219 468 156 220 469 157 221 470 157 221 471 156 220 472 158 222 473 156 220 474 159 223 475 158 222 476 158 222 477 159 223 478 155 219 479 159 223 480 160 224 481 155 219 482 155 219 483 160 224 484 156 220 485 160 224 486 161 225 487 156 220 488 156 220 489 161 225 490 159 223 491 161 225 492 160 224 493 159 223 494 148 212 495 150 214 496 162 226 497 162 226 498 150 214 499 163 227 500 150 214 501 164 228 502 163 227 503 163 227 504 164 228 505 165 229 506 164 228 507 166 230 508 165 229 509 151 215 510 164 228 511 150 214 512 151 215 513 166 230 514 164 228 515 151 215 516 167 231 517 166 230 518 151 215 519 168 232 520 167 231 521 151 215 522 152 216 523 168 232 524 146 208 525 169 233 526 145 207 527 145 207 528 169 233 529 153 217 530 144 206 531 143 205 532 170 234 533 170 234 534 143 205 535 149 213 536 154 218 537 168 232 538 152 216 539 171 235 540 172 236 541 173 237 542</p>
+        </triangles>
+        <triangles material="PLAYER_Face1-material" count="82">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>171 238 543 162 226 544 174 239 545 174 239 546 162 226 547 175 240 548 162 226 549 163 227 550 175 240 551 175 240 552 163 227 553 176 241 554 163 227 555 177 242 556 176 241 557 176 241 558 177 242 559 178 243 560 177 242 561 179 244 562 178 243 563 178 243 564 179 244 565 180 245 566 179 244 567 181 246 568 180 245 569 180 245 570 181 246 571 182 247 572 181 246 573 153 217 574 182 247 575 182 247 576 153 217 577 183 248 578 153 217 579 169 233 580 183 248 581 183 248 582 169 233 583 184 249 584 169 233 585 173 250 586 184 249 587 184 249 588 173 250 589 185 251 590 173 250 591 171 238 592 185 251 593 185 251 594 171 238 595 186 252 596 171 238 597 174 239 598 186 252 599 186 252 600 174 239 601 187 253 602 174 239 603 188 254 604 187 253 605 187 253 606 188 254 607 189 255 608 188 254 609 190 256 610 189 255 611 189 255 612 190 256 613 191 257 614 189 255 615 192 258 616 187 253 617 187 253 618 192 258 619 186 252 620 192 258 621 193 259 622 186 252 623 186 252 624 193 259 625 185 251 626 193 259 627 194 260 628 185 251 629 185 251 630 194 260 631 184 249 632 194 260 633 195 261 634 184 249 635 184 249 636 195 261 637 183 248 638 195 261 639 196 262 640 183 248 641 183 248 642 196 262 643 182 247 644 196 262 645 197 263 646 182 247 647 182 247 648 197 263 649 180 245 650 197 263 651 198 264 652 180 245 653 180 245 654 198 264 655 178 243 656 198 264 657 176 241 658 178 243 659 196 262 660 199 265 661 197 263 662 197 263 663 199 265 664 198 264 665 199 265 666 200 266 667 198 264 668 198 264 669 200 266 670 201 267 671 200 266 672 202 268 673 201 267 674 201 267 675 202 268 676 203 269 677 202 268 678 196 262 679 203 269 680 203 269 681 196 262 682 204 270 683 196 262 684 195 261 685 204 270 686 205 271 687 177 242 688 163 227 689 205 271 690 179 244 691 177 242 692 205 271 693 206 272 694 179 244 695 205 271 696 207 273 697 206 272 698 205 271 699 208 274 700 207 273 701 205 271 702 165 229 703 208 274 704 205 271 705 163 227 706 165 229 707 209 275 708 153 217 709 181 246 710 209 275 711 154 218 712 153 217 713 209 275 714 210 276 715 154 218 716 209 275 717 211 277 718 210 276 719 209 275 720 206 272 721 211 277 722 209 275 723 179 244 724 206 272 725 209 275 726 181 246 727 179 244 728 175 240 729 201 267 730 188 254 731 188 254 732 201 267 733 212 278 734 201 267 735 203 269 736 212 278 737 212 278 738 203 269 739 213 279 740 203 269 741 204 270 742 213 279 743 214 280 744 194 260 745 193 259 746 214 280 747 195 261 748 194 260 749 214 280 750 191 257 751 195 261 752 214 280 753 189 255 754 191 257 755 214 280 756 193 259 757 189 255 758 215 281 759 211 277 760 206 272 761 215 281 762 216 282 763 211 277 764 215 281 765 207 273 766 216 282 767 215 281 768 206 272 769 207 273 770 200 266 771 199 265 772 202 268 773 202 268 774 199 265 775 196 262 776 198 264 777 201 267 778 176 241 779 176 241 780 201 267 781 175 240 782 175 240 783 188 254 784 174 239 785 193 259 786 192 258 787 189 255 788</p>
+        </triangles>
+        <triangles material="PLAYER_FaceTop1-material" count="12">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>217 283 789 207 273 790 208 274 791 217 283 792 216 282 793 207 273 794 217 283 795 211 277 796 216 282 797 217 283 798 210 276 799 211 277 800 217 283 801 154 218 802 210 276 803 217 283 804 218 284 805 154 218 806 217 283 807 165 229 808 218 284 809 217 283 810 208 274 811 165 229 812 218 284 813 168 232 814 154 218 815 218 284 816 167 231 817 168 232 818 218 284 819 166 230 820 167 231 821 218 284 822 165 229 823 166 230 824</p>
+        </triangles>
+        <triangles material="PLAYER_Deltoid1-material" count="42">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>219 285 825 220 286 826 221 287 827 221 287 828 220 286 829 222 288 830 220 286 831 223 289 832 222 288 833 222 288 834 223 289 835 224 290 836 223 289 837 225 291 838 224 290 839 224 290 840 225 291 841 226 292 842 225 291 843 227 293 844 226 292 845 226 292 846 227 293 847 228 294 848 227 293 849 219 285 850 228 294 851 228 294 852 219 285 853 229 295 854 219 285 855 221 287 856 229 295 857 229 295 858 221 287 859 230 296 860 221 287 861 231 297 862 230 296 863 232 298 864 233 299 865 234 300 866 234 300 867 233 299 868 235 301 869 233 299 870 236 302 871 235 301 872 235 301 873 236 302 874 237 303 875 236 302 876 238 304 877 237 303 878 237 303 879 238 304 880 239 305 881 238 304 882 240 306 883 239 305 884 239 305 885 240 306 886 241 307 887 240 306 888 242 308 889 241 307 890 241 307 891 242 308 892 243 309 893 242 308 894 244 310 895 243 309 896 243 309 897 244 310 898 233 299 899 244 310 900 236 302 901 233 299 902 245 311 903 222 288 904 226 292 905 245 311 906 221 287 907 222 288 908 245 311 909 231 297 910 221 287 911 245 311 912 226 292 913 231 297 914 246 312 915 239 305 916 243 309 917 246 312 918 232 298 919 239 305 920 246 312 921 233 299 922 232 298 923 246 312 924 243 309 925 233 299 926 227 293 927 225 291 928 219 285 929 219 285 930 225 291 931 220 286 932 225 291 933 223 289 934 220 286 935 242 308 936 240 306 937 244 310 938 244 310 939 240 306 940 236 302 941 240 306 942 238 304 943 236 302 944 222 288 945 224 290 946 226 292 947 243 309 948 239 305 949 241 307 950</p>
+        </triangles>
+        <triangles material="PLAYER_Back1-material" count="24">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>247 313 951 248 314 952 64 315 953 64 315 954 248 314 955 62 316 956 248 314 957 249 317 958 62 316 959 62 316 960 249 317 961 61 318 962 249 317 963 250 319 964 61 318 965 61 318 966 250 319 967 59 320 968 250 319 969 251 321 970 59 320 971 252 322 972 49 323 973 10 324 974 252 322 975 0 111 976 49 323 977 252 322 978 105 112 979 0 111 980 252 322 981 97 114 982 105 112 983 252 322 984 40 325 985 97 114 986 252 322 987 12 326 988 40 325 989 252 322 990 10 324 991 12 326 992 41 327 993 97 328 994 60 329 995 60 329 996 97 328 997 63 330 998 97 328 999 40 331 1000 63 330 1001 63 330 1002 40 331 1003 117 332 1004 40 331 1005 36 333 1006 117 332 1007 248 314 1008 253 334 1009 249 317 1010 249 317 1011 253 334 1012 250 319 1013 41 41 1014 60 64 1015 59 63 1016 63 67 1017 117 136 1018 64 68 1019 9 335 1020 97 328 1021 41 327 1022</p>
+        </triangles>
+        <triangles material="PLAYER_Legs1-material" count="45">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>254 336 1023 255 337 1024 256 338 1025 254 336 1026 257 339 1027 255 337 1028 254 336 1029 258 340 1030 257 339 1031 254 336 1032 259 341 1033 258 340 1034 254 336 1035 260 342 1036 259 341 1037 254 336 1038 261 343 1039 260 342 1040 254 336 1041 251 344 1042 261 343 1043 254 336 1044 256 338 1045 251 344 1046 262 345 1047 263 346 1048 255 337 1049 262 345 1050 247 347 1051 263 346 1052 262 345 1053 264 348 1054 247 347 1055 262 345 1056 265 349 1057 264 348 1058 262 345 1059 266 350 1060 265 349 1061 262 345 1062 267 351 1063 266 350 1064 262 345 1065 268 352 1066 267 351 1067 262 345 1068 255 337 1069 268 352 1070 269 353 1071 59 320 1072 251 321 1073 269 353 1074 270 354 1075 59 320 1076 269 353 1077 271 355 1078 270 354 1079 269 353 1080 272 356 1081 271 355 1082 269 353 1083 255 357 1084 272 356 1085 269 353 1086 256 358 1087 255 357 1088 269 353 1089 251 321 1090 256 358 1091 59 63 1092 270 359 1093 41 41 1094 41 41 1095 270 359 1096 42 42 1097 270 359 1098 271 360 1099 42 42 1100 42 42 1101 271 360 1102 45 45 1103 271 360 1104 117 136 1105 45 45 1106 272 356 1107 64 315 1108 271 355 1109 272 356 1110 247 313 1111 64 315 1112 272 356 1113 263 361 1114 247 313 1115 272 356 1116 255 357 1117 263 361 1118 73 362 1119 260 363 1120 107 364 1121 73 362 1122 273 365 1123 260 363 1124 73 362 1125 258 366 1126 273 365 1127 73 362 1128 75 367 1129 258 366 1130 121 368 1131 267 369 1132 87 370 1133 121 368 1134 274 371 1135 267 369 1136 121 368 1137 265 372 1138 274 371 1139 121 368 1140 90 373 1141 265 372 1142 258 340 1143 259 341 1144 273 374 1145 273 374 1146 259 341 1147 260 342 1148 267 351 1149 274 375 1150 266 350 1151 266 350 1152 274 375 1153 265 349 1154 64 68 1155 117 136 1156 271 360 1157</p>
+        </triangles>
+        <triangles material="PLAYER_LegBck1-material" count="22">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>275 376 1158 250 377 1159 253 378 1160 275 376 1161 276 379 1162 250 377 1163 275 376 1164 277 380 1165 276 379 1166 275 376 1167 258 340 1168 277 380 1169 275 376 1170 257 339 1171 258 340 1172 275 376 1173 255 337 1174 257 339 1175 275 376 1176 253 378 1177 255 337 1178 278 381 1179 253 378 1180 248 382 1181 278 381 1182 255 337 1183 253 378 1184 278 381 1185 268 352 1186 255 337 1187 278 381 1188 267 351 1189 268 352 1190 278 381 1191 279 383 1192 267 351 1193 278 381 1194 280 384 1195 279 383 1196 278 381 1197 248 382 1198 280 384 1199 247 385 1200 264 348 1201 248 382 1202 248 382 1203 264 348 1204 280 384 1205 264 348 1206 265 349 1207 280 384 1208 280 384 1209 265 349 1210 279 383 1211 250 377 1212 276 379 1213 261 343 1214 261 343 1215 276 379 1216 260 342 1217 276 379 1218 277 380 1219 260 342 1220 261 343 1221 251 386 1222 250 377 1223</p>
+        </triangles>
+        <triangles material="PLAYER_FootBtm1-material" count="8">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>79 387 1224 80 388 1225 21 389 1226 21 389 1227 80 388 1228 24 390 1229 80 388 1230 27 391 1231 24 390 1232 24 390 1233 27 391 1234 26 392 1235 54 393 1236 56 394 1237 51 395 1238 51 395 1239 56 394 1240 93 396 1241 56 394 1242 92 397 1243 93 396 1244 53 398 1245 54 393 1246 51 395 1247</p>
+        </triangles>
+        <triangles material="PLAYER_Chest1-material" count="13">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>118 140 1248 44 399 1249 119 138 1250 119 138 1251 44 399 1252 104 133 1253 44 399 1254 46 400 1255 104 133 1256 104 133 1257 46 400 1258 37 131 1259 46 400 1260 47 401 1261 37 131 1262 116 134 1263 281 402 1264 104 110 1265 104 110 1266 281 402 1267 119 141 1268 281 402 1269 120 142 1270 119 141 1271 41 327 1272 43 403 1273 9 335 1274 9 335 1275 43 403 1276 118 404 1277 47 405 1278 117 332 1279 37 406 1280 37 406 1281 117 332 1282 36 333 1283 118 140 1284 43 407 1285 44 399 1286</p>
+        </triangles>
+        <triangles material="PLAYER_Shoulders1-material" count="18">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>281 408 1287 282 409 1288 120 410 1289 120 410 1290 282 409 1291 66 411 1292 282 409 1293 144 412 1294 66 411 1295 66 411 1296 144 412 1297 65 413 1298 144 412 1299 170 414 1300 65 413 1301 65 413 1302 170 414 1303 48 415 1304 170 414 1305 50 416 1306 48 415 1307 103 417 1308 283 418 1309 116 419 1310 116 419 1311 283 418 1312 281 408 1313 283 418 1314 284 420 1315 281 408 1316 281 408 1317 284 420 1318 282 409 1319 103 421 1320 149 422 1321 283 423 1322 283 423 1323 149 422 1324 284 424 1325 149 422 1326 172 425 1327 284 424 1328 284 424 1329 172 425 1330 144 426 1331 170 414 1332 149 427 1333 50 416 1334 50 416 1335 149 427 1336 103 428 1337 144 429 1338 282 430 1339 284 431 1340</p>
+        </triangles>
+        <triangles material="PLAYER_Inmouth1-material" count="11">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>285 432 1341 286 433 1342 212 434 1343 285 432 1344 188 435 1345 286 433 1346 285 432 1347 190 436 1348 188 435 1349 285 432 1350 191 437 1351 190 436 1352 285 432 1353 287 438 1354 191 437 1355 285 432 1356 195 439 1357 287 438 1358 285 432 1359 204 440 1360 195 439 1361 285 432 1362 213 441 1363 204 440 1364 285 432 1365 212 434 1366 213 441 1367 286 433 1368 188 435 1369 212 434 1370 287 438 1371 195 439 1372 191 437 1373</p>
+        </triangles>
+        <triangles material="PLAYER_Bicep1-material" count="44">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>67 442 1374 288 443 1375 72 444 1376 72 444 1377 288 443 1378 98 445 1379 288 443 1380 289 446 1381 98 445 1382 98 445 1383 289 446 1384 99 447 1385 289 446 1386 290 448 1387 99 447 1388 99 447 1389 290 448 1390 291 449 1391 290 448 1392 292 450 1393 291 449 1394 291 449 1395 292 450 1396 226 451 1397 292 450 1398 231 452 1399 226 451 1400 232 453 1401 293 454 1402 239 455 1403 239 455 1404 293 454 1405 294 456 1406 293 454 1407 295 457 1408 294 456 1409 294 456 1410 295 457 1411 33 458 1412 295 457 1413 296 459 1414 33 458 1415 33 458 1416 296 459 1417 31 460 1418 296 459 1419 297 461 1420 31 460 1421 31 460 1422 297 461 1423 30 462 1424 297 461 1425 28 463 1426 30 462 1427 99 447 1428 291 449 1429 69 464 1430 69 464 1431 291 449 1432 67 442 1433 291 449 1434 298 465 1435 67 442 1436 67 442 1437 298 465 1438 288 443 1439 298 465 1440 228 466 1441 288 443 1442 288 443 1443 228 466 1444 229 467 1445 28 463 1446 299 468 1447 294 456 1448 294 456 1449 299 468 1450 237 469 1451 299 468 1452 297 461 1453 237 469 1454 237 469 1455 297 461 1456 235 470 1457 297 461 1458 234 471 1459 235 470 1460 229 467 1461 230 472 1462 288 443 1463 288 443 1464 230 472 1465 289 446 1466 230 472 1467 292 450 1468 289 446 1469 289 446 1470 292 450 1471 290 448 1472 297 461 1473 296 459 1474 234 471 1475 234 471 1476 296 459 1477 293 454 1478 296 459 1479 295 457 1480 293 454 1481 298 465 1482 291 449 1483 228 466 1484 228 466 1485 291 449 1486 226 451 1487 33 458 1488 84 473 1489 294 456 1490 294 456 1491 84 473 1492 28 463 1493 230 472 1494 231 452 1495 292 450 1496 299 468 1497 28 463 1498 297 461 1499 294 456 1500 237 469 1501 239 455 1502 234 471 1503 293 454 1504 232 453 1505</p>
+        </triangles>
+        <triangles material="PLAYER_ForeArm1-material" count="24">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>35 474 1506 300 475 1507 301 476 1508 301 476 1509 300 475 1510 29 477 1511 300 475 1512 302 478 1513 29 477 1514 29 477 1515 302 478 1516 32 479 1517 302 478 1518 303 480 1519 32 479 1520 32 479 1521 303 480 1522 304 481 1523 305 482 1524 306 483 1525 100 484 1526 100 484 1527 306 483 1528 71 485 1529 306 483 1530 307 486 1531 71 485 1532 71 485 1533 307 486 1534 308 487 1535 307 486 1536 68 488 1537 308 487 1538 309 489 1539 68 488 1540 310 490 1541 309 489 1542 101 491 1543 68 488 1544 309 489 1545 100 484 1546 101 491 1547 309 489 1548 305 482 1549 100 484 1550 300 475 1551 35 474 1552 311 492 1553 311 492 1554 35 474 1555 304 481 1556 35 474 1557 34 493 1558 304 481 1559 304 481 1560 34 493 1561 32 479 1562 68 74 1563 70 76 1564 308 494 1565 308 494 1566 70 76 1567 71 77 1568 35 35 1569 301 495 1570 83 89 1571 83 89 1572 301 495 1573 29 29 1574 310 490 1575 68 488 1576 307 486 1577</p>
+        </triangles>
+        <triangles material="PLAYER_Teeth1-material" count="12">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>312 496 1578 313 497 1579 314 498 1580 314 498 1581 313 497 1582 315 499 1583 313 497 1584 316 500 1585 315 499 1586 315 499 1587 316 500 1588 317 501 1589 316 500 1590 318 502 1591 317 501 1592 319 503 1593 320 504 1594 321 505 1595 321 505 1596 320 504 1597 322 506 1598 320 504 1599 323 507 1600 322 506 1601 322 506 1602 323 507 1603 324 508 1604 323 507 1605 325 509 1606 324 508 1607 316 500 1608 326 510 1609 318 502 1610 325 509 1611 323 507 1612 327 511 1613</p>
+        </triangles>
+        <triangles material="PLAYER_LegBck1_001-material" count="8">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>277 512 1614 107 364 1615 260 363 1616 277 512 1617 76 513 1618 107 364 1619 277 512 1620 75 367 1621 76 513 1622 277 512 1623 258 366 1624 75 367 1625 279 514 1626 87 370 1627 267 369 1628 279 514 1629 85 515 1630 87 370 1631 279 514 1632 90 373 1633 85 515 1634 279 514 1635 265 372 1636 90 373 1637</p>
+        </triangles>
+        <triangles material="PLAYER_Calf1-material" count="8">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>77 83 1638 82 516 1639 78 84 1640 77 83 1641 25 517 1642 82 516 1643 77 83 1644 23 518 1645 25 517 1646 77 83 1647 74 80 1648 23 518 1649 88 94 1650 102 519 1651 86 92 1652 88 94 1653 52 520 1654 102 519 1655 88 94 1656 55 521 1657 52 520 1658 88 94 1659 89 95 1660 55 521 1661</p>
+        </triangles>
+        <triangles material="PLAYER_Boots-material" count="8">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>328 522 1662 78 84 1663 82 516 1664 328 522 1665 73 79 1666 78 84 1667 328 522 1668 74 80 1669 73 79 1670 328 522 1671 23 518 1672 74 80 1673 329 523 1674 86 92 1675 102 519 1676 329 523 1677 121 144 1678 86 92 1679 329 523 1680 89 95 1681 121 144 1682 329 523 1683 55 521 1684 89 95 1685</p>
+        </triangles>
+        <triangles material="PLAYER_FootTop1-material" count="8">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>328 524 1686 22 525 1687 23 526 1688 328 524 1689 20 527 1690 22 525 1691 328 524 1692 81 528 1693 20 527 1694 328 524 1695 82 529 1696 81 528 1697 329 530 1698 57 531 1699 55 532 1700 329 530 1701 91 533 1702 57 531 1703 329 530 1704 94 534 1705 91 533 1706 329 530 1707 102 535 1708 94 534 1709</p>
+        </triangles>
+        <triangles material="PLAYER_Hand-Btm1-material" count="54">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>330 536 1710 331 537 1711 332 538 1712 332 538 1713 331 537 1714 333 539 1715 331 537 1716 334 540 1717 333 539 1718 333 539 1719 334 540 1720 335 541 1721 334 540 1722 336 542 1723 335 541 1724 335 541 1725 336 542 1726 337 543 1727 336 542 1728 338 544 1729 337 543 1730 337 543 1731 338 544 1732 339 545 1733 338 544 1734 340 546 1735 339 545 1736 339 545 1737 340 546 1738 341 547 1739 340 546 1740 342 548 1741 341 547 1742 343 549 1743 344 550 1744 345 551 1745 345 551 1746 344 550 1747 346 552 1748 344 550 1749 347 553 1750 346 552 1751 346 552 1752 347 553 1753 348 554 1754 347 553 1755 349 555 1756 348 554 1757 348 554 1758 349 555 1759 350 556 1760 349 555 1761 351 557 1762 350 556 1763 350 556 1764 351 557 1765 352 558 1766 351 557 1767 353 559 1768 352 558 1769 352 558 1770 353 559 1771 354 560 1772 353 559 1773 355 561 1774 354 560 1775 356 562 1776 357 563 1777 354 560 1778 354 560 1779 357 563 1780 352 558 1781 357 563 1782 358 564 1783 352 558 1784 352 558 1785 358 564 1786 359 565 1787 358 564 1788 360 566 1789 359 565 1790 359 565 1791 360 566 1792 361 567 1793 360 566 1794 362 568 1795 361 567 1796 361 567 1797 362 568 1798 363 569 1799 332 538 1800 333 539 1801 364 570 1802 364 570 1803 333 539 1804 365 571 1805 333 539 1806 366 572 1807 365 571 1808 365 571 1809 366 572 1810 367 573 1811 366 572 1812 368 574 1813 367 573 1814 367 573 1815 368 574 1816 369 575 1817 368 574 1818 370 576 1819 369 575 1820 335 541 1821 366 572 1822 333 539 1823 335 541 1824 370 576 1825 366 572 1826 335 541 1827 371 577 1828 370 576 1829 335 541 1830 337 543 1831 371 577 1832 348 554 1833 350 556 1834 372 578 1835 372 578 1836 350 556 1837 363 569 1838 350 556 1839 359 565 1840 363 569 1841 363 569 1842 359 565 1843 361 567 1844 342 548 1845 340 546 1846 334 540 1847 334 540 1848 340 546 1849 336 542 1850 340 546 1851 338 544 1852 336 542 1853 347 553 1854 344 550 1855 349 555 1856 349 555 1857 344 550 1858 351 557 1859 344 550 1860 343 549 1861 351 557 1862 332 538 1863 364 570 1864 373 579 1865 370 576 1866 368 574 1867 366 572 1868 350 556 1869 352 558 1870 359 565 1871</p>
+        </triangles>
+        <triangles material="Material_001-material" count="28">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>373 579 1872 364 570 1873 330 536 1874 330 536 1875 364 570 1876 374 580 1877 364 570 1878 371 577 1879 374 580 1880 374 580 1881 371 577 1882 342 548 1883 371 577 1884 337 543 1885 342 548 1886 342 548 1887 337 543 1888 341 547 1889 337 543 1890 339 545 1891 341 547 1892 353 559 1893 375 581 1894 355 561 1895 355 561 1896 375 581 1897 357 563 1898 375 581 1899 372 578 1900 357 563 1901 357 563 1902 372 578 1903 358 564 1904 372 578 1905 363 569 1906 358 564 1907 358 564 1908 363 569 1909 360 566 1910 363 569 1911 362 568 1912 360 566 1913 364 570 1914 365 571 1915 371 577 1916 371 577 1917 365 571 1918 370 576 1919 365 571 1920 367 573 1921 370 576 1922 370 576 1923 367 573 1924 369 575 1925 343 549 1926 375 581 1927 351 557 1928 343 549 1929 372 578 1930 375 581 1931 343 549 1932 348 554 1933 372 578 1934 343 549 1935 345 551 1936 348 554 1937 330 536 1938 374 580 1939 331 537 1940 331 537 1941 374 580 1942 334 540 1943 374 580 1944 342 548 1945 334 540 1946 351 557 1947 375 581 1948 353 559 1949 357 563 1950 356 562 1951 355 561 1952 345 551 1953 346 552 1954 348 554 1955</p>
+        </triangles>
+        <triangles material="PLAYER_Cuff1-material" count="6">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>302 478 1956 300 475 1957 303 480 1958 303 480 1959 300 475 1960 304 481 1961 300 475 1962 311 492 1963 304 481 1964 310 490 1965 307 486 1966 309 489 1967 309 489 1968 307 486 1969 305 482 1970 306 582 1971 307 583 1972 305 584 1973</p>
+        </triangles>
+        <triangles material="PLAYER_Shldr-Joint-material" count="8">
+          <input semantic="VERTEX" source="#gordon_reference-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#gordon_reference-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#gordon_reference-mesh-map-0" offset="2" set="0"/>
+          <p>95 585 1974 96 118 1975 6 586 1976 6 586 1977 96 118 1978 8 115 1979 96 118 1980 106 116 1981 8 115 1982 17 587 1983 19 588 1984 58 589 1985 58 589 1986 19 588 1987 39 590 1988 19 588 1989 38 591 1990 39 590 1991 4 592 1992 95 585 1993 6 586 1994 58 589 1995 15 593 1996 17 587 1997</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="gordon_reference_skeleton_gordon_reference-skin" name="gordon_reference_skeleton">
+      <skin source="#gordon_reference-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="gordon_reference_skeleton_gordon_reference-skin-joints">
+          <Name_array id="gordon_reference_skeleton_gordon_reference-skin-joints-array" count="51">Bip01 Bip01_Pelvis Bip01_L_Thigh Bip01_L_Calf Bip01_L_Foot Bip01_L_Toe0 Bip01_L_Toe01 Bip01_L_Toe02 Bip01_R_Thigh Bip01_R_Calf Bip01_R_Foot Bip01_R_Toe0 Bip01_R_Toe01 Bip01_R_Toe02 Bip01_Spine Bip01_Spine1 Bip01_Spine2 Bip01_Spine3 Bip01_Neck Bip01_Head Dummy08 Bone02 Dummy05 Bone09 Dummy04 Bone05 Dummy03 Bone07 Dummy09 Dummy10 Bone13 Bip01_L_Clavicle Bip01_L_UpperArm Bip01_L_Forearm Bip01_L_Hand Bip01_L_Finger0 Bip01_L_Finger01 Bip01_L_Finger02 Bip01_L_Finger1 Bip01_L_Finger11 Bip01_L_Finger12 Bip01_R_Clavicle Bip01_R_UpperArm Bip01_R_Forearm Bip01_R_Hand Bip01_R_Finger0 Bip01_R_Finger01 Bip01_R_Finger02 Bip01_R_Finger1 Bip01_R_Finger11 Bip01_R_Finger12</Name_array>
+          <technique_common>
+            <accessor source="#gordon_reference_skeleton_gordon_reference-skin-joints-array" count="51" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gordon_reference_skeleton_gordon_reference-skin-bind_poses">
+          <float_array id="gordon_reference_skeleton_gordon_reference-skin-bind_poses-array" count="816">1.21434e-6 -1 0 0 1 1.19209e-6 0 0 0 0 1 -39.52612 0 0 0 1 -3.08071e-4 -3.37643e-4 1 -39.52611 2.26957e-6 -1 -3.37784e-4 0.01335126 1 2.14321e-6 3.08071e-4 -0.01217687 0 0 0 1 -0.02608352 -0.02112072 -0.9994367 39.6007 -0.002051293 -0.9997737 0.02118122 -0.8295938 -0.9996578 0.002602636 0.02603429 2.682947 0 0 0 1 -0.0256313 0.1002207 -0.9946351 21.49657 -0.005196928 -0.994962 -0.1001199 1.789295 -0.999658 0.002602875 0.02602303 2.683169 0 0 0 1 0.003710865 3.37075e-4 -0.9999932 3.976495 1.70955e-6 -1 -3.37203e-4 1.383711 -0.9999931 -4.36012e-7 -0.003710865 2.806043 0 0 0 1 9.34209e-7 -1 -3.45644e-4 -5.023477 1.40872e-6 -3.45463e-4 1 -0.193785 -1 -9.11723e-7 1.41017e-6 2.791259 0 0 0 1 9.33147e-7 -1 -3.45996e-4 -5.959217 1.40507e-6 -3.45814e-4 1 -0.1937866 -1 -9.1066e-7 1.40653e-6 2.791259 0 0 0 1 9.33147e-7 -1 -3.45996e-4 -6.894956 1.40507e-6 -3.45814e-4 1 -0.1937867 -1 -9.1066e-7 1.40653e-6 2.791259 0 0 0 1 0.01746857 -0.02410495 -0.999557 39.57348 0.002524197 -0.9997051 0.02415245 -0.9452873 -0.9998443 -0.002944946 -0.01740258 -3.024818 0 0 0 1 0.01688617 0.1032652 -0.9945107 21.47272 0.004712879 -0.9946495 -0.1031998 1.801077 -0.9998464 -0.00294435 -0.01728248 -3.029479 0 0 0 1 -0.001107692 3.54004e-4 -0.9999994 3.983427 2.01142e-7 -1 -3.54185e-4 1.383775 -0.9999995 -5.71887e-7 0.001107692 -3.107259 0 0 0 1 3.37011e-7 -1 -3.45744e-4 -5.023482 1.41212e-6 -3.45628e-4 1 -0.1937869 -1 -3.16054e-7 1.40805e-6 -3.102851 0 0 0 1 3.371e-7 -1 -3.46096e-4 -5.959223 1.4108e-6 -3.45979e-4 1 -0.1937893 -1 -3.16144e-7 1.40673e-6 -3.102851 0 0 0 1 3.371e-7 -1 -3.46096e-4 -6.894963 1.4108e-6 -3.45979e-4 1 -0.19379 -1 -3.16144e-7 1.40673e-6 -3.102851 0 0 0 1 1.80377e-6 -0.2259497 0.974139 -39.91916 -1.79953e-6 -0.9741393 -0.2259498 8.555987 1 -1.36779e-6 -2.16383e-6 8.67306e-5 0 0 0 1 1.86356e-6 -0.08826178 0.9960975 -45.97953 -1.55898e-6 -0.9960977 -0.08826196 2.185807 1 -1.41077e-6 -1.99399e-6 7.99097e-5 0 0 0 1 1.06783e-6 0.1033422 0.994646 -50.291 -1.18008e-6 -0.9946463 0.103342 -7.539914 1 -1.30647e-6 -9.40262e-7 2.67494e-5 0 0 0 1 1.15244e-6 0.06858766 0.9976453 -56.31253 -1.21775e-6 -0.9976455 0.06858748 -5.573921 1 -1.31628e-6 -1.06631e-6 3.36743e-5 0 0 0 1 1.79245e-6 -0.7664913 0.642255 -41.54738 -2.57226e-6 -0.6422551 -0.7664912 47.65267 1 -3.00505e-7 -3.12293e-6 1.65558e-4 0 0 0 1 8.68772e-7 -0.2758313 0.9612062 -62.79586 -1.21531e-6 -0.9612064 -0.2758314 15.09721 1 -9.50884e-7 -1.1704e-6 3.80623e-5 0 0 0 1 0 1 3.44783e-4 3.600269 0 -3.44634e-4 1 -65.37246 1 0 0 0.143984 0 0 0 1 0 1 3.44695e-4 3.664278 0 -3.44546e-4 1 -65.34893 1 0 0 0.1178266 0 0 0 1 0 1 3.43263e-4 6.760514 0 -3.43025e-4 1 -64.89198 1 0 0 0.08208245 0 0 0 1 0 1 3.43263e-4 6.865693 0 -3.43025e-4 1 -64.9726 1 0 0 0.108904 0 0 0 1 0 1 3.43025e-4 7.448177 0 -3.42876e-4 1 -66.32452 1 0 0 0.08895075 0 0 0 1 0 1 3.43245e-4 7.532351 0 -3.43096e-4 1 -66.29889 1 0 0 0.09004694 0 0 0 1 0 1 3.43025e-4 7.922555 0 -3.42876e-4 1 -68.02385 1 0 0 0.07977753 0 0 0 1 0 1 3.43267e-4 7.981093 0 -3.43118e-4 1 -68.00253 1 0 0 0.07553172 0 0 0 1 0 1 3.44396e-4 8.048151 0 -3.44247e-4 1 -67.49852 1 0 0 0.09812027 0 0 0 1 0 1 3.44604e-4 1.346698 0 -3.44485e-4 1 -66.64452 1 0 0 0.09918528 0 0 0 1 0 1 3.43989e-4 1.291167 0 -3.4387e-4 1 -66.6156 1 0 0 0.09918642 0 0 0 1 0.9800665 -0.01377975 -0.1981921 7.567282 -2.67755e-6 0.9975911 -0.06937319 5.559251 0.1986705 0.06799095 0.9777052 -59.18519 0 0 0 1 0.1085066 3.35482e-4 -0.9940958 57.46327 6.00336e-7 1 3.37618e-4 1.4642 0.9940959 -3.71597e-5 0.1085065 -15.399 0 0 0 1 0.1063445 -0.1983339 -0.9743483 45.10929 0.0215519 0.9801348 -0.1971594 10.63777 0.9940959 -3.21847e-5 0.1085063 -15.39899 0 0 0 1 0.1045835 -0.2661904 -0.9582303 33.9683 -0.9940725 8.02393e-4 -0.1087183 15.40942 0.02970844 0.9639206 -0.2645285 13.0256 0 0 0 1 -0.1677016 -0.6437454 -0.7466382 25.4933 -0.9802243 0.1895936 0.0567013 9.828142 0.1050564 0.7413819 -0.6628097 27.18252 0 0 0 1 -0.1677023 -0.6437452 -0.7466382 24.565 -0.9802241 0.1895944 0.05670148 9.82814 0.105057 0.7413818 -0.6628097 27.18252 0 0 0 1 -0.1677023 -0.6437453 -0.7466381 23.63668 -0.9802241 0.1895946 0.05670124 9.828151 0.1050572 0.7413817 -0.6628097 27.18252 0 0 0 1 0.1057338 -0.2238996 -0.96886 31.53369 -0.9940972 3.37735e-5 -0.1084957 15.78491 0.02432465 0.9746127 -0.2225742 11.71831 0 0 0 1 -0.2064592 -0.212961 -0.9549986 33.49843 -0.9781529 0.06919181 0.1960354 5.718663 0.02432996 0.9746081 -0.2225936 11.71889 0 0 0 1 -0.3075253 -0.2045648 -0.9292909 32.43542 -0.9512291 0.09106248 0.2947395 2.342663 0.02433001 0.9746086 -0.2225918 11.71881 0 0 0 1 -0.9800665 -0.01378518 -0.1981896 7.818134 -2.6226e-6 0.9975908 -0.06937426 5.564579 0.1986684 -0.06799107 -0.9777057 59.40893 0 0 0 1 -0.09983408 3.36094e-4 -0.9950041 57.84027 -2.9623e-7 1 3.3803e-4 1.452712 0.9950038 3.41518e-5 -0.0998342 14.86199 0 0 0 1 -0.09784394 -0.1983333 -0.9752388 45.04438 -0.01983636 0.9801347 -0.1973387 10.61278 0.9950039 3.69567e-5 -0.0998345 14.86201 0 0 0 1 -0.09621238 -0.2661774 -0.9591105 34.0927 0.9949767 0.001043617 -0.1001 14.8752 0.02764523 -0.9639236 0.2647398 -13.00563 0 0 0 1 0.3158069 -0.6074867 -0.7288526 26.85563 0.9421157 0.2919449 0.1648813 6.07739 0.1126215 -0.7387343 0.6645209 -27.11392 0 0 0 1 0.3158069 -0.6074867 -0.7288526 25.92731 0.9421157 0.2919447 0.1648815 6.077384 0.1126211 -0.7387344 0.6645209 -27.11393 0 0 0 1 0.3158069 -0.6074867 -0.7288526 24.999 0.9421157 0.2919447 0.1648815 6.077387 0.1126211 -0.7387344 0.6645209 -27.11394 0 0 0 1 -0.09728634 -0.2239066 -0.969743 31.94856 0.9950044 3.69493e-5 -0.09982925 15.28913 0.02238816 -0.9746108 0.2227843 -11.68427 0 0 0 1 0.2317818 -0.2117197 -0.9494482 33.82417 0.9725097 0.07289695 0.2211564 4.52927 0.02238863 -0.9746081 0.2227956 -11.68464 0 0 0 1 0.2317805 -0.2117198 -0.9494487 32.33887 0.9725102 0.07289719 0.2211549 4.529312 0.02238911 -0.9746082 0.2227957 -11.68463 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#gordon_reference_skeleton_gordon_reference-skin-bind_poses-array" count="51" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="gordon_reference_skeleton_gordon_reference-skin-weights">
+          <float_array id="gordon_reference_skeleton_gordon_reference-skin-weights-array" count="376">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#gordon_reference_skeleton_gordon_reference-skin-weights-array" count="376" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#gordon_reference_skeleton_gordon_reference-skin-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#gordon_reference_skeleton_gordon_reference-skin-bind_poses"/>
+        </joints>
+        <vertex_weights count="376">
+          <input semantic="JOINT" source="#gordon_reference_skeleton_gordon_reference-skin-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#gordon_reference_skeleton_gordon_reference-skin-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>17 0 41 1 41 2 41 3 41 4 41 5 41 6 16 7 41 8 16 9 17 10 31 11 17 12 31 13 31 14 31 15 17 16 31 17 16 18 31 19 13 20 10 21 11 22 10 23 10 24 9 25 10 26 10 27 42 28 43 29 42 30 42 31 43 32 42 33 43 34 43 35 16 36 16 37 16 38 31 39 16 40 14 41 14 42 15 43 15 44 14 45 15 46 15 47 17 48 17 49 17 50 4 51 3 52 4 53 4 54 4 55 4 56 5 57 31 58 1 59 14 60 1 61 1 62 14 63 1 64 17 65 17 66 32 67 33 68 32 69 33 70 33 71 32 72 9 73 9 74 9 75 9 76 9 77 9 78 13 79 10 80 11 81 10 82 43 83 42 84 3 85 3 86 3 87 3 88 3 89 3 90 7 91 7 92 4 93 5 94 41 95 41 96 16 97 32 98 32 99 33 100 33 101 4 102 17 103 16 104 17 105 16 106 9 107 28 108 28 109 28 110 28 111 28 112 28 113 28 114 28 115 17 116 14 117 16 118 16 119 17 120 3 121 28 122 28 123 28 124 28 125 28 126 28 127 28 128 28 129 28 130 19 131 19 132 28 133 28 134 19 135 19 136 19 137 19 138 28 139 28 140 19 141 19 142 19 143 17 144 19 145 21 146 17 147 21 148 17 149 19 150 19 151 19 152 19 153 19 154 19 155 30 156 19 157 19 158 30 159 30 160 30 161 19 162 19 163 19 164 19 165 19 166 19 167 19 168 19 169 17 170 21 171 17 172 21 173 21 174 19 175 19 176 19 177 27 178 19 179 27 180 19 181 19 182 19 183 21 184 21 185 21 186 21 187 23 188 21 189 21 190 21 191 21 192 21 193 21 194 23 195 25 196 19 197 19 198 19 199 19 200 25 201 19 202 19 203 19 204 19 205 19 206 19 207 19 208 19 209 19 210 19 211 19 212 19 213 21 214 19 215 19 216 19 217 19 218 32 219 32 220 32 221 32 222 32 223 32 224 32 225 32 226 32 227 32 228 32 229 32 230 32 231 42 232 42 233 42 234 42 235 42 236 42 237 42 238 42 239 42 240 42 241 42 242 42 243 42 244 32 245 42 246 2 247 2 248 1 249 8 250 8 251 17 252 1 253 8 254 1 255 8 256 8 257 8 258 8 259 8 260 8 261 2 262 2 263 2 264 2 265 2 266 2 267 2 268 1 269 1 270 1 271 1 272 9 273 3 274 8 275 8 276 8 277 2 278 2 279 2 280 17 281 17 282 17 283 17 284 19 285 19 286 19 287 32 288 32 289 32 290 32 291 32 292 42 293 42 294 42 295 42 296 42 297 32 298 42 299 43 300 43 301 43 302 43 303 43 304 33 305 33 306 33 307 33 308 33 309 33 310 43 311 19 312 19 313 19 314 19 315 19 316 19 317 19 318 21 319 21 320 21 321 21 322 21 323 21 324 21 325 19 326 21 327 10 328 4 329 33 330 34 331 33 332 34 333 38 334 38 335 40 336 40 337 40 338 40 339 40 340 40 341 38 342 48 343 50 344 50 345 50 346 50 347 50 348 50 349 48 350 48 351 44 352 44 353 43 354 43 355 43 356 44 357 44 358 46 359 47 360 47 361 47 362 44 363 34 364 35 365 35 366 37 367 37 368 37 369 35 370 38 371 48 372 33 373 34 374 44 375</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="gordon_reference" name="gordon_reference">
+      <node id="gordon_reference_skeleton" name="gordon_reference_skeleton" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="gordon_reference_skeleton_Bip01" name="Bip01" sid="Bip01" type="JOINT">
+          <matrix sid="transform">1.19209e-6 1 0 0 -1 1.21434e-6 0 0 0 0 1 39.52612 0 0 0 1</matrix>
+          <node id="gordon_reference_skeleton_Bip01_Pelvis" name="Bip01 Pelvis" sid="Bip01_Pelvis" type="JOINT">
+            <matrix sid="transform">3.37784e-4 0.9999998 -9.51172e-7 0 -3.08071e-4 1.05513e-6 0.9999999 0 0.9999998 -3.37642e-4 3.08072e-4 0 0 0 0 1</matrix>
+            <node id="gordon_reference_skeleton_Bip01_L_Thigh" name="Bip01 L Thigh" sid="Bip01_L_Thigh" type="JOINT">
+              <matrix sid="transform">-0.9994214 0.02151959 0.0263414 -0.001151575 0.02145813 0.9997664 -0.002613703 6.5856e-6 -0.02639149 -0.002046953 -0.9996495 3.713253 0 0 0 1</matrix>
+              <node id="gordon_reference_skeleton_Bip01_L_Calf" name="Bip01 L Calf" sid="Bip01_L_Calf" type="JOINT">
+                <matrix sid="transform">0.9926266 0.1212132 1.1282e-5 18.04573 -0.1212132 0.9926265 -4.92262e-7 -2.58982e-5 -1.12616e-5 -8.79401e-7 1 2.21729e-5 0 0 0 1</matrix>
+                <node id="gordon_reference_skeleton_Bip01_L_Foot" name="Bip01 L Foot" sid="Bip01_L_Foot" type="JOINT">
+                  <matrix sid="transform">0.9945668 -0.09988551 0.02932208 17.59761 0.09976439 0.9949955 0.005568936 1.69158e-4 -0.0297316 -0.002613378 0.9995546 2.2006e-4 0 0 0 1</matrix>
+                  <node id="gordon_reference_skeleton_Bip01_L_Toe0" name="Bip01 L Toe0" sid="Bip01_L_Toe0" type="JOINT">
+                    <matrix sid="transform">8.38892e-6 -0.9999931 -0.003712304 3.793116 1 8.44101e-6 -7.75326e-7 6.407191 8.06758e-7 -0.003712304 0.9999931 0.01408792 0 0 0 1</matrix>
+                    <node id="gordon_reference_skeleton_Bip01_L_Toe01" name="Bip01 L Toe01" sid="Bip01_L_Toe01" type="JOINT">
+                      <matrix sid="transform">1 3.51691e-7 -1.0621e-9 0.9357395 -3.5172e-7 1 -3.64776e-9 -4.69387e-7 1.06206e-9 3.64798e-9 1 2.38419e-7 0 0 0 1</matrix>
+                      <node id="gordon_reference_skeleton_Bip01_L_Toe02" name="Bip01 L Toe02" sid="Bip01_L_Toe02" type="JOINT">
+                        <matrix sid="transform">1 -2.91038e-11 -8.13793e-14 0.93574 0 1 1.13687e-13 3.60887e-8 6.91669e-14 0 1 0 0 0 0 1</matrix>
+                        <extra>
+                          <technique profile="blender">
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">-1.570794</roll>
+                            <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                            <tip_y sid="tip_y" type="float">-5.8651e-5</tip_y>
+                            <tip_z sid="tip_z" type="float">0.1694709</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">-1.570794</roll>
+                          <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                          <tip_y sid="tip_y" type="float">-5.8651e-5</tip_y>
+                          <tip_z sid="tip_z" type="float">0.1694709</tip_z>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <layer sid="layer" type="string">0</layer>
+                        <roll sid="roll" type="float">-1.570794</roll>
+                        <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                        <tip_y sid="tip_y" type="float">-5.8651e-5</tip_y>
+                        <tip_z sid="tip_z" type="float">0.1694709</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">-1.575215</roll>
+                      <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                      <tip_y sid="tip_y" type="float">-0.1694709</tip_y>
+                      <tip_z sid="tip_z" type="float">-5.8651e-5</tip_z>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">-1.492964</roll>
+                    <tip_x sid="tip_x" type="float">-8.80718e-4</tip_x>
+                    <tip_y sid="tip_y" type="float">-0.1686172</tip_y>
+                    <tip_z sid="tip_z" type="float">-0.01696586</tip_z>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">-1.789936</roll>
+                  <tip_x sid="tip_x" type="float">-3.47614e-4</tip_x>
+                  <tip_y sid="tip_y" type="float">-0.1694325</tip_y>
+                  <tip_z sid="tip_z" type="float">0.00358963</tip_z>
+                </technique>
+              </extra>
+            </node>
+            <node id="gordon_reference_skeleton_Bip01_R_Thigh" name="Bip01 R Thigh" sid="Bip01_R_Thigh" type="JOINT">
+              <matrix sid="transform">-0.9995539 0.0244894 -0.01709358 0.001151576 0.02444248 0.999697 0.002948623 -2.62282e-6 0.01716061 0.002529499 -0.9998495 -3.713253 0 0 0 1</matrix>
+              <node id="gordon_reference_skeleton_Bip01_R_Calf" name="Bip01 R Calf" sid="Bip01_R_Calf" type="JOINT">
+                <matrix sid="transform">0.9918756 0.1272122 -1.2009e-4 18.04573 -0.1272122 0.9918755 2.28221e-6 -1.31577e-4 1.19401e-4 1.3013e-5 1 0.002073288 0 0 0 1</matrix>
+                <node id="gordon_reference_skeleton_Bip01_R_Foot" name="Bip01 R Foot" sid="Bip01_R_Foot" type="JOINT">
+                  <matrix sid="transform">0.9945279 -0.1029132 -0.01798788 17.59761 0.1028423 0.994686 -0.004826646 -6.91414e-6 0.01838902 0.00295032 0.9998266 -9.27448e-5 0 0 0 1</matrix>
+                  <node id="gordon_reference_skeleton_Bip01_R_Toe0" name="Bip01 R Toe0" sid="Bip01_R_Toe0" type="JOINT">
+                    <matrix sid="transform">-8.37664e-6 -0.9999994 0.001106324 3.793031 1 -8.44104e-6 1.35857e-7 6.407256 -1.26543e-7 0.001106324 0.9999995 -0.004196405 0 0 0 1</matrix>
+                    <node id="gordon_reference_skeleton_Bip01_R_Toe01" name="Bip01 R Toe01" sid="Bip01_R_Toe01" type="JOINT">
+                      <matrix sid="transform">1 3.5172e-7 8.95953e-11 0.9357409 -3.5172e-7 1 -1.31888e-9 3.38769e-7 -8.95934e-11 1.31888e-9 1 -2.38419e-7 0 0 0 1</matrix>
+                      <node id="gordon_reference_skeleton_Bip01_R_Toe02" name="Bip01 R Toe02" sid="Bip01_R_Toe02" type="JOINT">
+                        <matrix sid="transform">1 0 -2.83107e-15 0.93574 0 1 -2.27374e-13 6.84755e-7 2.18159e-14 2.27374e-13 1 -2.38419e-7 0 0 0 1</matrix>
+                        <extra>
+                          <technique profile="blender">
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">-1.570795</roll>
+                            <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                            <tip_y sid="tip_y" type="float">-5.8651e-5</tip_y>
+                            <tip_z sid="tip_z" type="float">0.1694709</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">-1.570795</roll>
+                          <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                          <tip_y sid="tip_y" type="float">-5.8651e-5</tip_y>
+                          <tip_z sid="tip_z" type="float">0.1694709</tip_z>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <layer sid="layer" type="string">0</layer>
+                        <roll sid="roll" type="float">-1.570795</roll>
+                        <tip_x sid="tip_x" type="float">2.38419e-7</tip_x>
+                        <tip_y sid="tip_y" type="float">-5.8651e-5</tip_y>
+                        <tip_z sid="tip_z" type="float">0.1694709</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">-1.571904</roll>
+                      <tip_x sid="tip_x" type="float">0</tip_x>
+                      <tip_y sid="tip_y" type="float">-0.1694709</tip_y>
+                      <tip_z sid="tip_z" type="float">-5.84125e-5</tip_z>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">-1.644931</roll>
+                    <tip_x sid="tip_x" type="float">7.98702e-4</tip_x>
+                    <tip_y sid="tip_y" type="float">-0.1685641</tip_y>
+                    <tip_z sid="tip_z" type="float">-0.01749038</tip_z>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">-1.345004</roll>
+                  <tip_x sid="tip_x" type="float">4.27961e-4</tip_x>
+                  <tip_y sid="tip_y" type="float">-0.1694209</tip_y>
+                  <tip_z sid="tip_z" type="float">0.00409317</tip_z>
+                </technique>
+              </extra>
+            </node>
+            <node id="gordon_reference_skeleton_Bip01_Spine" name="Bip01 Spine" sid="Bip01_Spine" type="JOINT">
+              <matrix sid="transform">0.9742151 -0.2256207 -3.10234e-4 1.294138 0.2256207 0.9742151 3.61574e-6 0.6845686 3.01419e-4 -7.35177e-5 0.9999999 3.97808e-4 0 0 0 1</matrix>
+              <node id="gordon_reference_skeleton_Bip01_Spine1" name="Bip01 Spine1" sid="Bip01_Spine1" type="JOINT">
+                <matrix sid="transform">0.9902799 0.1390886 1.75163e-7 5.309422 -0.1390886 0.9902799 3.49698e-9 -0.003800869 -1.72973e-7 -2.78262e-8 1 -1.07152e-6 0 0 0 1</matrix>
+                <node id="gordon_reference_skeleton_Bip01_Spine2" name="Bip01 Spine2" sid="Bip01_Spine2" type="JOINT">
+                  <matrix sid="transform">0.981643 0.1907281 1.04041e-6 4.82635 -0.1907281 0.981643 -1.96903e-7 -0.004595041 -1.05886e-6 -5.14648e-9 1 -1.29858e-7 0 0 0 1</matrix>
+                  <node id="gordon_reference_skeleton_Bip01_Spine3" name="Bip01 Spine3" sid="Bip01_Spine3" type="JOINT">
+                    <matrix sid="transform">0.9993917 -0.03487837 -1.26387e-7 5.792858 0.03487838 0.9993917 -3.26695e-9 -0.005295634 1.26424e-7 -1.14316e-9 1 1.88009e-7 0 0 0 1</matrix>
+                    <node id="gordon_reference_skeleton_Bip01_Neck" name="Bip01 Neck" sid="Bip01_Neck" type="JOINT">
+                      <matrix sid="transform">0.5881707 -0.8087369 -1.98211e-6 6.662896 0.8087369 0.5881708 -1.15444e-6 -9.29475e-4 2.09945e-6 -9.23994e-7 1 -6.26231e-7 0 0 0 1</matrix>
+                      <node id="gordon_reference_skeleton_Bip01_Head" name="Bip01 Head" sid="Bip01_Head" type="JOINT">
+                        <matrix sid="transform">0.8287616 0.5596018 1.75253e-6 2.046985 -0.5596019 0.8287615 -1.07889e-6 5.126e-6 -2.05618e-6 -8.6578e-8 1 -3.16712e-7 0 0 0 1</matrix>
+                        <node id="gordon_reference_skeleton_Dummy08" name="Dummy08" sid="Dummy08" type="JOINT">
+                          <matrix sid="transform">-0.2754999 0.9613011 8.22244e-7 1.038624 -0.9613011 -0.2754999 -1.27996e-6 0.5480444 -1.00389e-6 -1.14305e-6 1 -0.1440171 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bone02" name="Bone02" sid="Bone02" type="JOINT">
+                            <matrix sid="transform">1 8.79227e-8 8.56313e-13 -0.06400323 -8.79518e-8 1 -5.49544e-8 -0.02352494 -8.56887e-13 5.49544e-8 1 0.02616099 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.570796</roll>
+                                <tip_x sid="tip_x" type="float">0</tip_x>
+                                <tip_y sid="tip_y" type="float">-5.84125e-5</tip_y>
+                                <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.570796</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">-5.84125e-5</tip_y>
+                              <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <node id="gordon_reference_skeleton_Dummy05" name="Dummy05" sid="Dummy05" type="JOINT">
+                          <matrix sid="transform">-0.2755015 0.9613007 7.37718e-7 1.44737 -0.9613007 -0.2755014 -1.25573e-6 3.718266 -1.00389e-6 -1.05512e-6 1 -0.08210611 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bone09" name="Bone09" sid="Bone09" type="JOINT">
+                            <matrix sid="transform">1 2.91038e-11 7.67088e-13 -0.1051784 -2.91038e-11 1 2.19818e-8 0.08061744 -7.65443e-13 -2.19818e-8 1 -0.02682299 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.570796</roll>
+                                <tip_x sid="tip_x" type="float">0</tip_x>
+                                <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                                <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.570796</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                              <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <node id="gordon_reference_skeleton_Dummy04" name="Dummy04" sid="Dummy04" type="JOINT">
+                          <matrix sid="transform">-0.2755016 0.9613006 7.37718e-7 3.01392 -0.9613007 -0.2755016 -1.25573e-6 3.984635 -1.00389e-6 -1.05513e-6 1 -0.08897522 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bone05" name="Bone05" sid="Bone05" type="JOINT">
+                            <matrix sid="transform">1 -2.19792e-7 5.35721e-13 -0.08418751 2.19792e-7 1 2.74772e-8 -0.02563068 -5.38909e-13 -2.74772e-8 1 -0.001097992 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.570796</roll>
+                                <tip_x sid="tip_x" type="float">0</tip_x>
+                                <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                                <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.570796</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                              <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <node id="gordon_reference_skeleton_Dummy03" name="Dummy03" sid="Dummy03" type="JOINT">
+                          <matrix sid="transform">-0.2755016 0.9613006 7.37718e-7 4.77818 -0.9613007 -0.2755016 -1.25573e-6 3.972485 -1.00389e-6 -1.05513e-6 1 -0.07980334 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bone07" name="Bone07" sid="Bone07" type="JOINT">
+                            <matrix sid="transform">1 -2.41766e-7 5.35721e-13 -0.05855513 2.41766e-7 1 2.74772e-8 -0.02132622 -5.37882e-13 -2.74772e-8 1 0.004244 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.570796</roll>
+                                <tip_x sid="tip_x" type="float">0</tip_x>
+                                <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                                <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.570796</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                              <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <node id="gordon_reference_skeleton_Dummy09" name="Dummy09" sid="Dummy09" type="JOINT">
+                          <matrix sid="transform">-0.2755003 0.961301 7.79982e-7 4.307802 -0.961301 -0.2755003 -1.26784e-6 4.23804 -1.00389e-6 -1.09909e-6 1 -0.09814831 0 0 0 1</matrix>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.570796</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">-5.81741e-5</tip_y>
+                              <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <node id="gordon_reference_skeleton_Dummy10" name="Dummy10" sid="Dummy10" type="JOINT">
+                          <matrix sid="transform">-0.2755 0.961301 7.79982e-7 1.640598 -0.961301 -0.2755001 -1.26784e-6 -1.968779 -1.00389e-6 -1.09909e-6 1 -0.09921911 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bone13" name="Bone13" sid="Bone13" type="JOINT">
+                            <matrix sid="transform">1 6.15488e-7 1.12722e-12 0.05557191 -6.15517e-7 1 -1.69483e-8 -0.02891286 -1.13094e-12 1.69483e-8 1 7.45058e-9 0 0 0 1</matrix>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.570796</roll>
+                                <tip_x sid="tip_x" type="float">0</tip_x>
+                                <tip_y sid="tip_y" type="float">-5.82933e-5</tip_y>
+                                <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.570796</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">-5.82933e-5</tip_y>
+                              <tip_z sid="tip_z" type="float">0.1694717</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">1.570804</roll>
+                            <tip_x sid="tip_x" type="float">-2.09606e-7</tip_x>
+                            <tip_y sid="tip_y" type="float">-0.1628963</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.0467453</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <node id="gordon_reference_skeleton_Bip01_L_Clavicle" name="Bip01 L Clavicle" sid="Bip01_L_Clavicle" type="JOINT">
+                        <matrix sid="transform">-0.116726 -0.8091997 0.5758219 -2.085413 0.1607601 -0.5875335 -0.7930703 2.764377 0.9800668 -2.82395e-6 0.1986675 4.341914 0 0 0 1</matrix>
+                        <node id="gordon_reference_skeleton_Bip01_L_UpperArm" name="Bip01 L UpperArm" sid="Bip01_L_UpperArm" type="JOINT">
+                          <matrix sid="transform">0.303361 -0.01384612 0.9527752 4.827232 0.06929807 0.9975674 -0.007567254 -9.29832e-6 -0.9503526 0.06832108 0.3035825 1.90735e-6 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bip01_L_Forearm" name="Bip01 L Forearm" sid="Bip01_L_Forearm" type="JOINT">
+                            <matrix sid="transform">0.980068 0.1986627 2.5332e-7 11.13977 -0.1986627 0.9800679 4.97427e-6 7.79629e-5 7.45058e-7 -4.92483e-6 1 3.8147e-6 0 0 0 1</matrix>
+                            <node id="gordon_reference_skeleton_Bip01_L_Hand" name="Bip01 L Hand" sid="Bip01_L_Hand" type="JOINT">
+                              <matrix sid="transform">0.9975662 5.62891e-5 0.06972413 10.31459 -0.06972414 7.96977e-4 0.9975659 3.33786e-6 5.81145e-7 -0.9999995 7.99194e-4 -9.53674e-7 0 0 0 1</matrix>
+                              <node id="gordon_reference_skeleton_Bip01_L_Finger0" name="Bip01 L Finger0" sid="Bip01_L_Finger0" type="JOINT">
+                                <matrix sid="transform">0.8692709 -0.2073161 0.4487628 1.646742 0.2473643 0.9684013 -0.03177939 0.4495497 -0.4279941 0.1386328 0.8930857 -1.70224 0 0 0 1</matrix>
+                                <node id="gordon_reference_skeleton_Bip01_L_Finger01" name="Bip01 L Finger01" sid="Bip01_L_Finger01" type="JOINT">
+                                  <matrix sid="transform">1 -6.96629e-7 -1.19209e-7 0.9283121 6.89179e-7 1 -5.32717e-7 -1.90735e-6 5.96046e-8 5.21541e-7 1 -2.86102e-6 0 0 0 1</matrix>
+                                  <node id="gordon_reference_skeleton_Bip01_L_Finger02" name="Bip01 L Finger02" sid="Bip01_L_Finger02" type="JOINT">
+                                    <matrix sid="transform">1 0 8.9407e-8 0.9283137 -1.11759e-8 1 -3.53903e-7 -2.86102e-6 -5.96046e-8 3.42727e-7 1 -3.33786e-6 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <layer sid="layer" type="string">0</layer>
+                                        <roll sid="roll" type="float">2.343603</roll>
+                                        <tip_x sid="tip_x" type="float">-0.1661195</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.03213071</tip_y>
+                                        <tip_z sid="tip_z" type="float">0.009609222</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <layer sid="layer" type="string">0</layer>
+                                      <roll sid="roll" type="float">2.343603</roll>
+                                      <tip_x sid="tip_x" type="float">-0.1661195</tip_x>
+                                      <tip_y sid="tip_y" type="float">0.03213071</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.009609222</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <layer sid="layer" type="string">0</layer>
+                                    <roll sid="roll" type="float">2.343603</roll>
+                                    <tip_x sid="tip_x" type="float">-0.1661195</tip_x>
+                                    <tip_y sid="tip_y" type="float">0.03213071</tip_y>
+                                    <tip_z sid="tip_z" type="float">0.009609222</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="gordon_reference_skeleton_Bip01_L_Finger1" name="Bip01 L Finger1" sid="Bip01_L_Finger1" type="JOINT">
+                                <matrix sid="transform">0.9990486 -1.12578e-5 -0.04361096 2.975833 4.61563e-5 0.9999996 7.99244e-4 -0.3863049 0.04361099 -8.0049e-4 0.9990484 -0.04413223 0 0 0 1</matrix>
+                                <node id="gordon_reference_skeleton_Bip01_L_Finger11" name="Bip01 L Finger11" sid="Bip01_L_Finger11" type="JOINT">
+                                  <matrix sid="transform">0.9511119 -0.3088466 2.03997e-5 1.438879 0.3088466 0.9511119 -3.17581e-6 -1.52588e-5 -1.84327e-5 9.3095e-6 1 -1.57356e-5 0 0 0 1</matrix>
+                                  <node id="gordon_reference_skeleton_Bip01_L_Finger12" name="Bip01 L Finger12" sid="Bip01_L_Finger12" type="JOINT">
+                                    <matrix sid="transform">0.9945271 -0.1044785 -1.81794e-6 1.485303 0.1044786 0.9945271 3.42727e-7 1.23978e-5 1.75834e-6 -5.21541e-7 0.9999999 1.57356e-5 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <layer sid="layer" type="string">0</layer>
+                                        <roll sid="roll" type="float">2.078157</roll>
+                                        <tip_x sid="tip_x" type="float">-0.1612052</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.01543235</tip_y>
+                                        <tip_z sid="tip_z" type="float">0.04994964</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <layer sid="layer" type="string">0</layer>
+                                      <roll sid="roll" type="float">1.983718</roll>
+                                      <tip_x sid="tip_x" type="float">-0.1657676</tip_x>
+                                      <tip_y sid="tip_y" type="float">0.0117259</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.03322219</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <layer sid="layer" type="string">0</layer>
+                                    <roll sid="roll" type="float">1.6879</roll>
+                                    <tip_x sid="tip_x" type="float">-0.1684703</tip_x>
+                                    <tip_y sid="tip_y" type="float">5.72205e-6</tip_y>
+                                    <tip_z sid="tip_z" type="float">-0.01838684</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <layer sid="layer" type="string">0</layer>
+                                  <roll sid="roll" type="float">1.731299</roll>
+                                  <tip_x sid="tip_x" type="float">-0.1684665</tip_x>
+                                  <tip_y sid="tip_y" type="float">1.35899e-4</tip_y>
+                                  <tip_z sid="tip_z" type="float">-0.01842498</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.462079</roll>
+                                <tip_x sid="tip_x" type="float">0.003652572</tip_x>
+                                <tip_y sid="tip_y" type="float">0.1661043</tip_y>
+                                <tip_z sid="tip_z" type="float">-0.03341293</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.462076</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">0.1694709</tip_y>
+                              <tip_z sid="tip_z" type="float">5.72205e-5</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">0.2000014</roll>
+                            <tip_x sid="tip_x" type="float">-4.76837e-7</tip_x>
+                            <tip_y sid="tip_y" type="float">0.1690624</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.01175689</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <node id="gordon_reference_skeleton_Bip01_R_Clavicle" name="Bip01 R Clavicle" sid="Bip01_R_Clavicle" type="JOINT">
+                        <matrix sid="transform">-0.1167239 -0.8092005 -0.5758213 -1.923028 0.1607667 -0.5875327 0.7930696 2.549725 -0.9800663 -2.85379e-6 0.1986715 -4.140392 0 0 0 1</matrix>
+                        <node id="gordon_reference_skeleton_Bip01_R_UpperArm" name="Bip01 R UpperArm" sid="Bip01_R_UpperArm" type="JOINT">
+                          <matrix sid="transform">0.295039 -0.01385176 -0.9553849 4.972044 0.06936345 0.9975673 0.006957273 4.76837e-7 0.9529642 -0.06832144 0.2952821 -2.74181e-6 0 0 0 1</matrix>
+                          <node id="gordon_reference_skeleton_Bip01_R_Forearm" name="Bip01 R Forearm" sid="Bip01_R_Forearm" type="JOINT">
+                            <matrix sid="transform">0.9800678 0.1986628 3.35276e-7 11.58535 -0.1986628 0.9800678 2.80481e-6 6.36578e-5 2.38419e-7 -2.81446e-6 0.9999999 0 0 0 0 1</matrix>
+                            <node id="gordon_reference_skeleton_Bip01_R_Hand" name="Bip01 R Hand" sid="Bip01_R_Hand" type="JOINT">
+                              <matrix sid="transform">0.9975672 6.18994e-5 -0.06971137 10.12706 -0.06971139 0.001039658 -0.9975666 -1.12057e-5 1.07288e-5 0.9999995 0.001041409 0 0 0 0 1</matrix>
+                              <node id="gordon_reference_skeleton_Bip01_R_Finger0" name="Bip01 R Finger0" sid="Bip01_R_Finger0" type="JOINT">
+                                <matrix sid="transform">0.8303647 -0.3264918 -0.4515503 1.53365 0.3865447 0.9211836 0.04476641 0.1096992 0.4013448 -0.2117168 0.891122 1.664507 0 0 0 1</matrix>
+                                <node id="gordon_reference_skeleton_Bip01_R_Finger01" name="Bip01 R Finger01" sid="Bip01_R_Finger01" type="JOINT">
+                                  <matrix sid="transform">1 7.45058e-9 -2.98023e-8 0.9283111 0 0.9999999 -3.42727e-7 -2.86102e-6 2.98023e-8 3.57628e-7 1 4.52995e-6 0 0 0 1</matrix>
+                                  <node id="gordon_reference_skeleton_Bip01_R_Finger02" name="Bip01 R Finger02" sid="Bip01_R_Finger02" type="JOINT">
+                                    <matrix sid="transform">1 -7.45058e-9 2.98023e-8 0.9283109 -2.23517e-8 1 7.45058e-9 -2.86102e-6 -2.98023e-8 7.45058e-9 1 4.05312e-6 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <layer sid="layer" type="string">0</layer>
+                                        <roll sid="roll" type="float">0.7093271</roll>
+                                        <tip_x sid="tip_x" type="float">0.1596612</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.04947614</tip_y>
+                                        <tip_z sid="tip_z" type="float">0.02794265</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <layer sid="layer" type="string">0</layer>
+                                      <roll sid="roll" type="float">0.7093271</roll>
+                                      <tip_x sid="tip_x" type="float">0.1596612</tip_x>
+                                      <tip_y sid="tip_y" type="float">0.04947614</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.02794265</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <layer sid="layer" type="string">0</layer>
+                                    <roll sid="roll" type="float">0.7093271</roll>
+                                    <tip_x sid="tip_x" type="float">0.1596612</tip_x>
+                                    <tip_y sid="tip_y" type="float">0.04947614</tip_y>
+                                    <tip_z sid="tip_z" type="float">0.02794265</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <node id="gordon_reference_skeleton_Bip01_R_Finger1" name="Bip01 R Finger1" sid="Bip01_R_Finger1" type="JOINT">
+                                <matrix sid="transform">0.9990495 5.63264e-6 0.04359041 2.68374 3.98308e-5 0.9999996 -0.001042077 -0.4273653 -0.04359037 0.001042822 0.999049 0.04423499 0 0 0 1</matrix>
+                                <node id="gordon_reference_skeleton_Bip01_R_Finger11" name="Bip01 R Finger11" sid="Bip01_R_Finger11" type="JOINT">
+                                  <matrix sid="transform">0.9455768 -0.325399 -1.1608e-5 1.438884 0.325399 0.9455768 -6.42613e-7 -7.62939e-6 1.1161e-5 -3.16277e-6 1 5.24521e-6 0 0 0 1</matrix>
+                                  <node id="gordon_reference_skeleton_Bip01_R_Finger12" name="Bip01 R Finger12" sid="Bip01_R_Finger12" type="JOINT">
+                                    <matrix sid="transform">0.9999999 1.40071e-6 1.49012e-8 1.485303 -1.41561e-6 0.9999998 5.25266e-7 1.14441e-5 1.49012e-8 -5.32717e-7 0.9999999 -1.04904e-5 0 0 0 1</matrix>
+                                    <extra>
+                                      <technique profile="blender">
+                                        <layer sid="layer" type="string">0</layer>
+                                        <roll sid="roll" type="float">1.13328</roll>
+                                        <tip_x sid="tip_x" type="float">0.164812</tip_x>
+                                        <tip_y sid="tip_y" type="float">0.01235389</tip_y>
+                                        <tip_z sid="tip_z" type="float">0.0374794</tip_z>
+                                      </technique>
+                                    </extra>
+                                  </node>
+                                  <extra>
+                                    <technique profile="blender">
+                                      <layer sid="layer" type="string">0</layer>
+                                      <roll sid="roll" type="float">1.13328</roll>
+                                      <tip_x sid="tip_x" type="float">0.164812</tip_x>
+                                      <tip_y sid="tip_y" type="float">0.01235389</tip_y>
+                                      <tip_z sid="tip_z" type="float">0.0374794</tip_z>
+                                    </technique>
+                                  </extra>
+                                </node>
+                                <extra>
+                                  <technique profile="blender">
+                                    <layer sid="layer" type="string">0</layer>
+                                    <roll sid="roll" type="float">1.444972</roll>
+                                    <tip_x sid="tip_x" type="float">0.1686239</tip_x>
+                                    <tip_y sid="tip_y" type="float">6.19888e-6</tip_y>
+                                    <tip_z sid="tip_z" type="float">-0.01691818</tip_z>
+                                  </technique>
+                                </extra>
+                              </node>
+                              <extra>
+                                <technique profile="blender">
+                                  <layer sid="layer" type="string">0</layer>
+                                  <roll sid="roll" type="float">1.401639</roll>
+                                  <tip_x sid="tip_x" type="float">0.1686191</tip_x>
+                                  <tip_y sid="tip_y" type="float">1.76668e-4</tip_y>
+                                  <tip_z sid="tip_z" type="float">-0.01696395</tip_z>
+                                </technique>
+                              </extra>
+                            </node>
+                            <extra>
+                              <technique profile="blender">
+                                <layer sid="layer" type="string">0</layer>
+                                <roll sid="roll" type="float">1.670794</roll>
+                                <tip_x sid="tip_x" type="float">-0.003361701</tip_x>
+                                <tip_y sid="tip_y" type="float">0.1661043</tip_y>
+                                <tip_z sid="tip_z" type="float">-0.03344345</tip_z>
+                              </technique>
+                            </extra>
+                          </node>
+                          <extra>
+                            <technique profile="blender">
+                              <layer sid="layer" type="string">0</layer>
+                              <roll sid="roll" type="float">1.670797</roll>
+                              <tip_x sid="tip_x" type="float">0</tip_x>
+                              <tip_y sid="tip_y" type="float">0.1694709</tip_y>
+                              <tip_z sid="tip_z" type="float">5.72205e-5</tip_z>
+                            </technique>
+                          </extra>
+                        </node>
+                        <extra>
+                          <technique profile="blender">
+                            <layer sid="layer" type="string">0</layer>
+                            <roll sid="roll" type="float">2.941594</roll>
+                            <tip_x sid="tip_x" type="float">-4.76837e-7</tip_x>
+                            <tip_y sid="tip_y" type="float">0.1690624</tip_y>
+                            <tip_z sid="tip_z" type="float">-0.01175689</tip_z>
+                          </technique>
+                        </extra>
+                      </node>
+                      <extra>
+                        <technique profile="blender">
+                          <layer sid="layer" type="string">0</layer>
+                          <roll sid="roll" type="float">1.5708</roll>
+                          <tip_x sid="tip_x" type="float">-4.38369e-7</tip_x>
+                          <tip_y sid="tip_y" type="float">-0.108843</tip_y>
+                          <tip_z sid="tip_z" type="float">-0.129898</tip_z>
+                        </technique>
+                      </extra>
+                    </node>
+                    <extra>
+                      <technique profile="blender">
+                        <layer sid="layer" type="string">0</layer>
+                        <roll sid="roll" type="float">1.570759</roll>
+                        <tip_x sid="tip_x" type="float">-2.10151e-7</tip_x>
+                        <tip_y sid="tip_y" type="float">-0.1690719</tip_y>
+                        <tip_z sid="tip_z" type="float">0.01162338</tip_z>
+                      </technique>
+                    </extra>
+                  </node>
+                  <extra>
+                    <technique profile="blender">
+                      <layer sid="layer" type="string">0</layer>
+                      <roll sid="roll" type="float">1.570772</roll>
+                      <tip_x sid="tip_x" type="float">-2.03756e-7</tip_x>
+                      <tip_y sid="tip_y" type="float">-0.1685636</tip_y>
+                      <tip_z sid="tip_z" type="float">0.01751327</tip_z>
+                    </technique>
+                  </extra>
+                </node>
+                <extra>
+                  <technique profile="blender">
+                    <layer sid="layer" type="string">0</layer>
+                    <roll sid="roll" type="float">1.57083</roll>
+                    <tip_x sid="tip_x" type="float">-2.67976e-7</tip_x>
+                    <tip_y sid="tip_y" type="float">-0.1688097</tip_y>
+                    <tip_z sid="tip_z" type="float">-0.01495742</tip_z>
+                  </technique>
+                </extra>
+              </node>
+              <extra>
+                <technique profile="blender">
+                  <layer sid="layer" type="string">0</layer>
+                  <roll sid="roll" type="float">1.57081</roll>
+                  <tip_x sid="tip_x" type="float">-3.08625e-7</tip_x>
+                  <tip_y sid="tip_y" type="float">-0.1650881</tip_y>
+                  <tip_z sid="tip_z" type="float">-0.03829193</tip_z>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <layer sid="layer" type="string">0</layer>
+                <roll sid="roll" type="float">1.557733</roll>
+                <tip_x sid="tip_x" type="float">3.82565e-7</tip_x>
+                <tip_y sid="tip_y" type="float">-0.1694709</tip_y>
+                <tip_z sid="tip_z" type="float">-5.72205e-5</tip_z>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="blender">
+              <layer sid="layer" type="string">0</layer>
+              <tip_x sid="tip_x" type="float">0.1694709</tip_x>
+              <tip_y sid="tip_y" type="float">2.05795e-7</tip_y>
+              <tip_z sid="tip_z" type="float">0</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="gordon_reference2" name="gordon_reference" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <instance_controller url="#gordon_reference_skeleton_gordon_reference-skin">
+            <skeleton>#gordon_reference_skeleton_Bip01</skeleton>
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="PLAYER_Chrome1-material" target="#PLAYER_Chrome1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_FaceSide1-material" target="#PLAYER_FaceSide1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Face1-material" target="#PLAYER_Face1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_FaceTop1-material" target="#PLAYER_FaceTop1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Deltoid1-material" target="#PLAYER_Deltoid1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Back1-material" target="#PLAYER_Back1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Legs1-material" target="#PLAYER_Legs1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_LegBck1-material" target="#PLAYER_LegBck1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_FootBtm1-material" target="#PLAYER_FootBtm1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Chest1-material" target="#PLAYER_Chest1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Shoulders1-material" target="#PLAYER_Shoulders1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Inmouth1-material" target="#PLAYER_Inmouth1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Bicep1-material" target="#PLAYER_Bicep1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_ForeArm1-material" target="#PLAYER_ForeArm1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Teeth1-material" target="#PLAYER_Teeth1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_LegBck1_001-material" target="#PLAYER_LegBck1_001-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Calf1-material" target="#PLAYER_Calf1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Boots-material" target="#PLAYER_Boots-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_FootTop1-material" target="#PLAYER_FootTop1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Hand-Btm1-material" target="#PLAYER_Hand-Btm1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="Material_001-material" target="#Material_001-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Cuff1-material" target="#PLAYER_Cuff1-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="PLAYER_Shldr-Joint-material" target="#PLAYER_Shldr-Joint-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_controller>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#gordon_reference"/>
+  </scene>
+</COLLADA>
