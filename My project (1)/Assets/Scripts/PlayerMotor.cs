@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
-{
+{   
+    private Animator animator;
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool IsGrounded;
@@ -15,14 +17,17 @@ public class PlayerMotor : MonoBehaviour
     float crouchTimer = 1;
     bool lerpCrouch = false;
     bool sprinting = false;
+    public int AnimDebug = 0;
+    
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         IsGrounded = controller.isGrounded;
         if (lerpCrouch)
@@ -91,4 +96,17 @@ public class PlayerMotor : MonoBehaviour
     //         speed = 15;
         
     // }
+    public void IsMoving( )
+    {
+    if (playerVelocity.x != 0 || playerVelocity.z != 0)
+    {
+        animator.SetBool("IsMoving", true);
+        AnimDebug = 1;
+    }
+    else
+    {
+        animator.SetBool("IsMoving", false);
+    }
+    Debug.Log(AnimDebug);
+    }
 }
