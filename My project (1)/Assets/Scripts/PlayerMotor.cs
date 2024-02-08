@@ -57,10 +57,6 @@ public class PlayerMotor : MonoBehaviour
         sprinting = !sprinting;
         if (sprinting)
             speed = 10;
-  
-        if (crouching)
-        
-            speed = 2;
         
         
     }
@@ -98,7 +94,7 @@ public class PlayerMotor : MonoBehaviour
     // }
     public void IsMoving( )
     {
-    if (playerVelocity.x != 0 || playerVelocity.z != 0)
+    if (playerVelocity != Vector3.zero)
     {
         animator.SetBool("IsMoving", true);
         AnimDebug = 1;
