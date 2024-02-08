@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMotor : MonoBehaviour
 {   
+
     private Animator animator;
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -22,7 +24,7 @@ public class PlayerMotor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        animator = GetComponent<Animator>();
+
         controller = GetComponent<CharacterController>();
     }
 
@@ -45,7 +47,9 @@ public class PlayerMotor : MonoBehaviour
                 crouchTimer = 0f;
             }
         }
+   
     }
+    
     public void Crouch()
     {
         crouching = !crouching;
@@ -56,7 +60,11 @@ public class PlayerMotor : MonoBehaviour
     {
         sprinting = !sprinting;
         if (sprinting)
-            speed = 10;
+            speed = 10f;
+        
+        if (Input.GetKeyUp(KeyCode.LeftShift));
+            speed = 5f;
+
         
         
     }
@@ -87,22 +95,9 @@ public class PlayerMotor : MonoBehaviour
     }
     // public void CrouchJump()
     // {
-    //     if (crouching && !IsGrounded)
-        
-    //         speed = 15;
-        
+
     // }
     public void IsMoving( )
     {
-    if (playerVelocity != Vector3.zero)
-    {
-        animator.SetBool("IsMoving", true);
-        AnimDebug = 1;
-    }
-    else
-    {
-        animator.SetBool("IsMoving", false);
-    }
-    Debug.Log(AnimDebug);
     }
 }
