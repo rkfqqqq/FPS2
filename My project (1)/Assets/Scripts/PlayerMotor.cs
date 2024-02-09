@@ -12,7 +12,9 @@ public class PlayerMotor : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool IsGrounded;
+    public float basespeed = 5f;
     public float speed = 5f;
+    public float additionalSpeed = 10f;
     public float gravity = -9.81f;
     public float jumpHeight = 0.5f;
     bool crouching = false;
@@ -29,7 +31,7 @@ public class PlayerMotor : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         IsGrounded = controller.isGrounded;
         if (lerpCrouch)
@@ -47,7 +49,15 @@ public class PlayerMotor : MonoBehaviour
                 crouchTimer = 0f;
             }
         }
-   
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed += additionalSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = basespeed;
+        }
+       Debug.Log(speed);
     }
     
     public void Crouch()
@@ -58,12 +68,17 @@ public class PlayerMotor : MonoBehaviour
     }
     public void Sprint()
     {
-        sprinting = !sprinting;
-        if (sprinting)
-            speed = 10f;
-        
-        if (Input.GetKeyUp(KeyCode.LeftShift));
-            speed = 5f;
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 15f;
+              
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    speed = 5f;
+                }
+                Debug.Log(speed);
+        }
+    
 
         
         
