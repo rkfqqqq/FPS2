@@ -16,11 +16,11 @@ public class PlayerMotor : MonoBehaviour
     public float speed = 5f;
     public float additionalSpeed = 10f;
     public float gravity = -9.81f;
-    public float jumpHeight = 0.5f;
+    public float jumpHeight = 200f;
     bool crouching = false;
     float crouchTimer = 1;
     bool lerpCrouch = false;
-    bool sprinting = false;
+    public bool sprinting = false;
     public int AnimDebug = 0;
     
     // Start is called before the first frame update
@@ -52,12 +52,14 @@ public class PlayerMotor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed += additionalSpeed;
+            sprinting = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = basespeed;
+            sprinting = false;
         }
-       Debug.Log(speed);
+        
     }
     
     public void Crouch()
