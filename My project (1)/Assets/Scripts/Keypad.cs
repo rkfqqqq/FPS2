@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class keypad : Interactable
 {
+    [SerializeField]
+    private GameObject door;
+    private bool doorOpen;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,10 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         
+    }
+    protected override void Interact()
+    {
+        doorOpen = !doorOpen;
+        door.GetComponent<Animator>().SetBool("IsOpen", doorOpen);
     }
 }
