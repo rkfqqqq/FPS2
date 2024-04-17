@@ -13,27 +13,27 @@ public class CharacterAnim : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             anim.SetBool("IsRunning", true);
-            if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown("w"))
-            {
-                anim.SetBool("IsSprinting", true);
-            }
-            if (Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyUp("w"))
-            {
-                anim.SetBool("IsSprinting", false);
-            }
+                if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.W))
+                {
+                    anim.SetBool("IsSprinting", true);
+                }
+                if (Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.W))
+                {
+                    anim.SetBool("IsSprinting", false);
+                }
         }
-        if (Input.GetKeyUp("w"))
+        if (Input.GetKeyUp(KeyCode.W))
         {
             anim.SetBool("IsRunning", false);
         }
-        if (Input.GetKeyDown("s"))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             anim.SetBool("IsGoingBack", true);
         }
-        if (Input.GetKeyUp("s"))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             anim.SetBool("IsGoingBack", false);
         }
