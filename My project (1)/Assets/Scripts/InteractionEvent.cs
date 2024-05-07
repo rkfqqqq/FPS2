@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using UnityEngine.Events;
 using UnityEngine;
-using UnityEditor;
 
 public class InteractionEvents : MonoBehaviour
 {
-    // public UnityEvent OnInteract;
+    public UnityEvent OnInteract;
     // Start is called before the first frame update
       }
 
